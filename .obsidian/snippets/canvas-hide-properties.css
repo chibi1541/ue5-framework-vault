@@ -1,0 +1,6 @@
+/* 캔버스 노드 미리보기에서만 속성(frontmatter) 숨기기 */
+.canvas-node-content .metadata-container,
+.canvas-node-content .frontmatter,
+.canvas-node-content .frontmatter-container {
+	display: none !important;
+}

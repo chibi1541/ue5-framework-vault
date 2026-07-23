@@ -1,0 +1,21 @@
+# --- Obsidian workspace / cache (사용자별 상태, 공유 불필요) ---
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/cache
+.obsidian/plugins/*/data.json
+.trash/
+
+# --- Claude Code 로컬 설정 ---
+.claude/settings.local.json
+
+# --- OS 생성 파일 ---
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
+
+# --- 에디터 임시 파일 ---
+*.swp
+*.tmp
+*~

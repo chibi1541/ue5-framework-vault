@@ -1,0 +1,43 @@
+{
+	"nodes":[
+		{"id":"entry-winmain","type":"file","file":"framework/WinMain.md","x":-230,"y":0,"width":460,"height":360},
+		{"id":"entry-launchwindowsstartup","type":"file","file":"framework/LaunchWindowsStartup.md","x":-490,"y":420,"width":460,"height":360},
+		{"id":"entry-launchwindowsshutdown","type":"file","file":"framework/LaunchWindowsShutdown.md","x":30,"y":420,"width":460,"height":360},
+		{"id":"entry-guardedmainwrapper","type":"file","file":"framework/GuardedMainWrapper.md","x":-490,"y":840,"width":460,"height":360},
+		{"id":"entry-guardedmain","type":"file","file":"framework/GuardedMain.md","x":-490,"y":1260,"width":460,"height":360},
+		{"id":"entry-enginepreinit","type":"file","file":"framework/EnginePreInit.md","x":-750,"y":1680,"width":460,"height":360},
+		{"id":"entry-editorinit","type":"file","file":"framework/EditorInit.md","x":-230,"y":1680,"width":460,"height":360},
+		{"id":"entry-fengineloop-preinit","type":"file","file":"framework/FEngineLoop/FEngineLoop.PreInit.md","x":-750,"y":2100,"width":460,"height":360},
+		{"id":"entry-fengineloop-init","type":"file","file":"framework/FEngineLoop/FEngineLoop.Init.md","x":-230,"y":2100,"width":460,"height":360},
+		{"id":"entry-enginetick","type":"file","file":"framework/EngineTick.md","x":290,"y":1680,"width":460,"height":360},
+		{"id":"entry-fengineloop-tick","type":"file","file":"framework/FEngineLoop/FEngineLoop.Tick.md","x":290,"y":2100,"width":460,"height":360},
+		{"id":"entry-ueditorengine-tick","type":"file","file":"framework/UEditorEngine/UEditorEngine.Tick.md","x":290,"y":2520,"width":460,"height":360},
+		{"id":"entry-ueditorengine-geteditorworldcontext","type":"file","file":"framework/UEditorEngine/UEditorEngine.GetEditorWorldContext.md","x":290,"y":2940,"width":460,"height":360},
+		{"id":"entry-uengine-init","type":"file","file":"framework/UEngine/UEngine.Init.md","x":290,"y":3360,"width":460,"height":360},
+		{"id":"entry-uengine-createnewworldcontext","type":"file","file":"framework/UEngine/UEngine.CreateNewWorldContext.md","x":290,"y":3780,"width":460,"height":360},
+		{"id":"type-ueditorengine","type":"file","file":"framework/UEditorEngine/UEditorEngine.md","x":1270,"y":0,"width":460,"height":360},
+		{"id":"type-uengine","type":"file","file":"framework/UEngine/UEngine.md","x":1270,"y":420,"width":460,"height":360},
+		{"id":"type-fworldcontext","type":"file","file":"framework/FWorldContext/FWorldContext.md","x":1270,"y":840,"width":460,"height":360},
+		{"id":"type-eworldtype","type":"file","file":"framework/Enum/EWorldType.md","x":1270,"y":1260,"width":460,"height":360}
+	],
+	"edges":[
+		{"id":"edge-winmain-startup","fromNode":"entry-winmain","fromSide":"bottom","toNode":"entry-launchwindowsstartup","toSide":"top","label":"1"},
+		{"id":"edge-winmain-shutdown","fromNode":"entry-winmain","fromSide":"bottom","toNode":"entry-launchwindowsshutdown","toSide":"top","label":"2"},
+		{"id":"edge-startup-wrapper","fromNode":"entry-launchwindowsstartup","fromSide":"bottom","toNode":"entry-guardedmainwrapper","toSide":"top","label":"SEH"},
+		{"id":"edge-startup-guardedmain","fromNode":"entry-launchwindowsstartup","fromSide":"left","toNode":"entry-guardedmain","toSide":"left","label":"no SEH"},
+		{"id":"edge-wrapper-guardedmain","fromNode":"entry-guardedmainwrapper","fromSide":"bottom","toNode":"entry-guardedmain","toSide":"top"},
+		{"id":"edge-guardedmain-preinit","fromNode":"entry-guardedmain","fromSide":"bottom","toNode":"entry-enginepreinit","toSide":"top"},
+		{"id":"edge-guardedmain-editorinit","fromNode":"entry-guardedmain","fromSide":"bottom","toNode":"entry-editorinit","toSide":"top","label":"GIsEditor"},
+		{"id":"edge-enginepreinit-fpreinit","fromNode":"entry-enginepreinit","fromSide":"bottom","toNode":"entry-fengineloop-preinit","toSide":"top"},
+		{"id":"edge-editorinit-finit","fromNode":"entry-editorinit","fromSide":"bottom","toNode":"entry-fengineloop-init","toSide":"top"},
+		{"id":"edge-guardedmain-enginetick","fromNode":"entry-guardedmain","fromSide":"right","toNode":"entry-enginetick","toSide":"top","label":"main loop"},
+		{"id":"edge-enginetick-fenginelooptick","fromNode":"entry-enginetick","fromSide":"bottom","toNode":"entry-fengineloop-tick","toSide":"top"},
+		{"id":"edge-fenginelooptick-ueditorenginetick","fromNode":"entry-fengineloop-tick","fromSide":"bottom","toNode":"entry-ueditorengine-tick","toSide":"top","label":"GEngine->Tick"},
+		{"id":"edge-ueditorenginetick-getworldcontext","fromNode":"entry-ueditorengine-tick","fromSide":"bottom","toNode":"entry-ueditorengine-geteditorworldcontext","toSide":"top"},
+		{"id":"edge-getworldcontext-uengineinit","fromNode":"entry-ueditorengine-geteditorworldcontext","fromSide":"bottom","toNode":"entry-uengine-init","toSide":"top","label":"created in"},
+		{"id":"edge-uengineinit-createnewworldcontext","fromNode":"entry-uengine-init","fromSide":"bottom","toNode":"entry-uengine-createnewworldcontext","toSide":"top"},
+		{"id":"edge-type-ueditorengine-uengine","fromNode":"type-ueditorengine","fromSide":"bottom","toNode":"type-uengine","toSide":"top","label":"inherits"},
+		{"id":"edge-type-uengine-fworldcontext","fromNode":"type-uengine","fromSide":"bottom","toNode":"type-fworldcontext","toSide":"top","label":"WorldList"},
+		{"id":"edge-type-fworldcontext-eworldtype","fromNode":"type-fworldcontext","fromSide":"bottom","toNode":"type-eworldtype","toSide":"top","label":"WorldType"}
+	]
+}
