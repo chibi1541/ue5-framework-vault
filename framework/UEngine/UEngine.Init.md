@@ -3,6 +3,7 @@ related:
   - "[[UEditorEngine/UEditorEngine.GetEditorWorldContext|UEditorEngine::GetEditorWorldContext]]"
   - "[[UEngine/UEngine.CreateNewWorldContext|UEngine::CreateNewWorldContext]]"
   - "[[UEngine/UEngine|UEngine]]"
+  - "[[UWorld/UWorld.CreateWorld|UWorld::CreateWorld]]"
 tags:
   - UnrealEngine_cpp
 ---

@@ -18,7 +18,9 @@
 		{"id":"type-ueditorengine","type":"file","file":"framework/UEditorEngine/UEditorEngine.md","x":1270,"y":0,"width":460,"height":360},
 		{"id":"type-uengine","type":"file","file":"framework/UEngine/UEngine.md","x":1270,"y":420,"width":460,"height":360},
 		{"id":"type-fworldcontext","type":"file","file":"framework/FWorldContext/FWorldContext.md","x":1270,"y":840,"width":460,"height":360},
-		{"id":"type-eworldtype","type":"file","file":"framework/Enum/EWorldType.md","x":1270,"y":1260,"width":460,"height":360}
+		{"id":"type-eworldtype","type":"file","file":"framework/Enum/EWorldType.md","x":1270,"y":1260,"width":460,"height":360},
+		{"id":"1c05c43605d8e387","type":"file","file":"chapter/core/CreateWorld.canvas","x":-200,"y":2640,"width":400,"height":400,"color":"4"},
+		{"id":"37c880e42052be07","x":-230,"y":2520,"width":210,"height":50,"type":"text","text":"UEngine::CreateWorld"}
 	],
 	"edges":[
 		{"id":"edge-winmain-startup","fromNode":"entry-winmain","fromSide":"bottom","toNode":"entry-launchwindowsstartup","toSide":"top","label":"1"},
@@ -38,6 +40,7 @@
 		{"id":"edge-uengineinit-createnewworldcontext","fromNode":"entry-uengine-init","fromSide":"bottom","toNode":"entry-uengine-createnewworldcontext","toSide":"top"},
 		{"id":"edge-type-ueditorengine-uengine","fromNode":"type-ueditorengine","fromSide":"bottom","toNode":"type-uengine","toSide":"top","label":"inherits"},
 		{"id":"edge-type-uengine-fworldcontext","fromNode":"type-uengine","fromSide":"bottom","toNode":"type-fworldcontext","toSide":"top","label":"WorldList"},
-		{"id":"edge-type-fworldcontext-eworldtype","fromNode":"type-fworldcontext","fromSide":"bottom","toNode":"type-eworldtype","toSide":"top","label":"WorldType"}
+		{"id":"edge-type-fworldcontext-eworldtype","fromNode":"type-fworldcontext","fromSide":"bottom","toNode":"type-eworldtype","toSide":"top","label":"WorldType"},
+		{"id":"0b6b3e59dccd9fc4","fromNode":"entry-fengineloop-init","fromSide":"bottom","toNode":"1c05c43605d8e387","toSide":"top"}
 	]
 }

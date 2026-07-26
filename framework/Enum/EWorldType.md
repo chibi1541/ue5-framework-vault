@@ -1,6 +1,8 @@
 ---
 related:
   - "[[FWorldContext/FWorldContext|FWorldContext]]"
+  - "[[UWorld/UWorld.CreateWorld|UWorld::CreateWorld]]"
+  - "[[UWorld/UWorld|UWorld]]"
 tags:
   - EngineTypes_h
 ---

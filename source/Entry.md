@@ -2,9 +2,6 @@
 summarize: true
 ---
 
-<aside>  
-📝
-
 ## 시작(LaunchWindows.cpp, Launch.cpp)
 
 #### // 0 - Foundation - Entry - BEGIN(LaunchWindows.cpp)

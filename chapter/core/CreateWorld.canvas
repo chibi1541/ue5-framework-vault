@@ -1,0 +1,28 @@
+{
+	"nodes":[
+		{"id":"createworld-uengine-init","type":"file","file":"framework/UEngine/UEngine.Init.md","x":0,"y":0,"width":460,"height":360},
+		{"id":"createworld-uworld-createworld","type":"file","file":"framework/UWorld/UWorld.CreateWorld.md","x":0,"y":420,"width":460,"height":360},
+		{"id":"type-fworldinitializationvalues","type":"file","file":"framework/FWorldInitializationValues/FWorldInitializationValues.md","x":980,"y":0,"width":460,"height":360},
+		{"id":"type-uworld","type":"file","file":"framework/UWorld/UWorld.md","x":980,"y":420,"width":460,"height":360},
+		{"id":"type-ulevel","type":"file","file":"framework/ULevel/ULevel.md","x":980,"y":840,"width":460,"height":360},
+		{"id":"type-aactor","type":"file","file":"framework/AActor/AActor.md","x":980,"y":1260,"width":460,"height":360},
+		{"id":"type-uscenecomponent","type":"file","file":"framework/USceneComponent/USceneComponent.md","x":980,"y":1680,"width":460,"height":360},
+		{"id":"type-uobject","type":"file","file":"framework/UObject/UObject.md","x":1500,"y":420,"width":460,"height":360},
+		{"id":"type-uobjectbaseutility","type":"file","file":"framework/UObjectBaseUtility/UObjectBaseUtility.md","x":1500,"y":840,"width":460,"height":360},
+		{"id":"type-uobjectbase","type":"file","file":"framework/UObjectBase/UObjectBase.md","x":1500,"y":1260,"width":460,"height":360},
+		{"id":"type-eobjectflags","type":"file","file":"framework/Enum/EObjectFlags.md","x":1500,"y":1680,"width":460,"height":360}
+	],
+	"edges":[
+		{"id":"edge-uengineinit-createworld","fromNode":"createworld-uengine-init","fromSide":"bottom","toNode":"createworld-uworld-createworld","toSide":"top","label":"UWorld::CreateWorld"},
+		{"id":"edge-type-uworld-fworldinit","fromNode":"type-uworld","fromSide":"top","toNode":"type-fworldinitializationvalues","toSide":"bottom","label":"InitializationValues"},
+		{"id":"edge-type-uworld-ulevel","fromNode":"type-uworld","fromSide":"bottom","toNode":"type-ulevel","toSide":"top","label":"PersistentLevel"},
+		{"id":"edge-type-ulevel-aactor","fromNode":"type-ulevel","fromSide":"bottom","toNode":"type-aactor","toSide":"top","label":"Actors"},
+		{"id":"edge-type-aactor-uscenecomponent","fromNode":"type-aactor","fromSide":"bottom","toNode":"type-uscenecomponent","toSide":"top","label":"RootComponent"},
+		{"id":"edge-type-uworld-uobject","fromNode":"type-uworld","fromSide":"right","toNode":"type-uobject","toSide":"left","label":"inherits"},
+		{"id":"edge-type-ulevel-uobject","fromNode":"type-ulevel","fromSide":"right","toNode":"type-uobject","toSide":"left","label":"inherits"},
+		{"id":"edge-type-aactor-uobject","fromNode":"type-aactor","fromSide":"right","toNode":"type-uobject","toSide":"left","label":"inherits"},
+		{"id":"edge-type-uobject-uobjectbaseutility","fromNode":"type-uobject","fromSide":"bottom","toNode":"type-uobjectbaseutility","toSide":"top","label":"inherits"},
+		{"id":"edge-type-uobjectbaseutility-uobjectbase","fromNode":"type-uobjectbaseutility","fromSide":"bottom","toNode":"type-uobjectbase","toSide":"top","label":"inherits"},
+		{"id":"edge-type-uobjectbase-eobjectflags","fromNode":"type-uobjectbase","fromSide":"bottom","toNode":"type-eobjectflags","toSide":"top","label":"ObjectFlags"}
+	]
+}

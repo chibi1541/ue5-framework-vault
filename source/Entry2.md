@@ -2,8 +2,6 @@
 summarize: true
 ---
 
-<aside>  
-📝
 
 ## Tick
 
