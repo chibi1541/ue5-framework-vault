@@ -138,10 +138,6 @@ struct FWorldInitializationValues
 };
 ```
 
-</aside>
-
-<aside>  
-📝
 
 ## UWorld
 
@@ -189,8 +185,6 @@ class UWorld final : public UObject, public FNetworkNotify
 
 - 잠깐 UObject 확인
     
-    <aside>  
-    📝
     
     ### UObject
     
@@ -306,7 +300,6 @@ class UWorld final : public UObject, public FNetworkNotify
     };
     ```
     
-    </aside>
     
 
 #### // 10 - Foundation - CreateWorld - class ULevel(Level.h)
@@ -345,8 +338,6 @@ class ULevel : public UObject
 
 #### // 12 - Foundation - CreateWorld - class AActor(Actor.h)
 
-<aside>  
-📝
 
 Actor = ActorComponent의 집합
 
@@ -630,5 +621,3 @@ class USceneComponent : public UActorComponent
     TArray<TObjectPtr<USceneComponent>> AttachChildren;
 };
 ```
-
-</aside>
