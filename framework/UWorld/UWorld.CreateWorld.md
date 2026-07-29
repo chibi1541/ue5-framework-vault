@@ -4,6 +4,7 @@ related:
   - "[[UWorld/UWorld|UWorld]]"
   - "[[FWorldInitializationValues/FWorldInitializationValues|FWorldInitializationValues]]"
   - "[[Enum/EWorldType|EWorldType]]"
+  - "[[UWorld/UWorld.InitializeNewWorld|UWorld::InitializeNewWorld]]"
 tags:
   - World_cpp
 ---

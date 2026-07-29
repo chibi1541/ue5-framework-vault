@@ -2,6 +2,8 @@
 related:
   - "[[UWorld/UWorld.CreateWorld|UWorld::CreateWorld]]"
   - "[[UWorld/UWorld|UWorld]]"
+  - "[[UWorld/UWorld.InitializeNewWorld|UWorld::InitializeNewWorld]]"
+  - "[[UWorld/UWorld.InitWorld|UWorld::InitWorld]]"
 tags:
   - WorldInitializationValues_h
 ---
