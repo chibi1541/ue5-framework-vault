@@ -1,6 +1,7 @@
 ---
 related:
   - "[[AActor/AActor|AActor]]"
+  - "[[UActorComponent/UActorComponent.OnRegister|UActorComponent::OnRegister]]"
 tags:
   - SceneComponent_h
 ---

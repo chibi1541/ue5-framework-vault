@@ -3,6 +3,10 @@ related:
   - "[[ULevel/ULevel|ULevel]]"
   - "[[USceneComponent/USceneComponent|USceneComponent]]"
   - "[[UObject/UObject|UObject]]"
+  - "[[UActorComponent/UActorComponent.RegisterComponentWithWorld|UActorComponent::RegisterComponentWithWorld]]"
+  - "[[UActorComponent/UActorComponent.OnRegister|UActorComponent::OnRegister]]"
+  - "[[FActorTickFunction/FActorTickFunction|FActorTickFunction]]"
+  - "[[FTickTaskLevel/FTickTaskLevel|FTickTaskLevel]]"
 tags:
   - Actor_h
 ---

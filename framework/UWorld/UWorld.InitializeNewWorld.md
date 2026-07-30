@@ -6,6 +6,7 @@ related:
   - "[[FWorldInitializationValues/FWorldInitializationValues|FWorldInitializationValues]]"
   - "[[FActorSpawnParameters/FActorSpawnParameters|FActorSpawnParameters]]"
   - "[[UWorld/UWorld.InitWorld|UWorld::InitWorld]]"
+  - "[[UWorld/UWorld.UpdateWorldComponents|UWorld::UpdateWorldComponents]]"
 tags:
   - World_cpp
 ---

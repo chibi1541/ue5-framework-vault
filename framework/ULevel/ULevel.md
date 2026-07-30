@@ -8,6 +8,8 @@ related:
   - "[[UWorld/UWorld.InitWorld|UWorld::InitWorld]]"
   - "[[UWorld/UWorld.GetWorldSettings|UWorld::GetWorldSettings]]"
   - "[[UWorld/UWorld.ConditionallyCreateDefaultLevelCollections|UWorld::ConditionallyCreateDefaultLevelCollections]]"
+  - "[[UWorld/UWorld.UpdateWorldComponents|UWorld::UpdateWorldComponents]]"
+  - "[[FTickTaskLevel/FTickTaskLevel|FTickTaskLevel]]"
 tags:
   - Level_h
 ---

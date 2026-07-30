@@ -5,6 +5,7 @@ related:
   - "[[FSubsystemCollectionBase/FSubsystemCollectionBase.AddAndInitializeValidatedSubsystem|FSubsystemCollectionBase::AddAndInitializeValidatedSubsystem]]"
   - "[[FSubsystemCollectionBase/FSubsystemCollectionBase.ForEachSubsystemOfClass|FSubsystemCollectionBase::ForEachSubsystemOfClass]]"
   - "[[FObjectSubsystemCollection/FObjectSubsystemCollection.ForEachSubsystem|FObjectSubsystemCollection::ForEachSubsystem]]"
+  - "[[UWorld/UWorld.UpdateWorldComponents|UWorld::UpdateWorldComponents]]"
 tags:
   - Subsystem_h
 ---
