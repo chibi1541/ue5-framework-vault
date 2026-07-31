@@ -1,6 +1,7 @@
 ---
 related:
   - "[[UObjectBase/UObjectBase|UObjectBase]]"
+  - "[[UObjectBaseUtility/UObjectBaseUtility.IsTemplate|UObjectBaseUtility::IsTemplate]]"
 tags:
   - ObjectMacros_h
 ---

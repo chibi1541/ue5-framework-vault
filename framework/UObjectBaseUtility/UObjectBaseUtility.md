@@ -2,6 +2,7 @@
 related:
   - "[[UObject/UObject|UObject]]"
   - "[[UObjectBase/UObjectBase|UObjectBase]]"
+  - "[[UObjectBaseUtility/UObjectBaseUtility.IsTemplate|UObjectBaseUtility::IsTemplate]]"
 tags:
   - UObjectBaseUtility_h
 ---

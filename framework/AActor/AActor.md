@@ -7,6 +7,7 @@ related:
   - "[[UActorComponent/UActorComponent.OnRegister|UActorComponent::OnRegister]]"
   - "[[FActorTickFunction/FActorTickFunction|FActorTickFunction]]"
   - "[[FTickTaskLevel/FTickTaskLevel|FTickTaskLevel]]"
+  - "[[AActor/AActor.HandleRegisterComponentWithWorld|AActor::HandleRegisterComponentWithWorld]]"
 tags:
   - Actor_h
 ---

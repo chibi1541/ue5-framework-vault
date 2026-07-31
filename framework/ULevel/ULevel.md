@@ -10,6 +10,9 @@ related:
   - "[[UWorld/UWorld.ConditionallyCreateDefaultLevelCollections|UWorld::ConditionallyCreateDefaultLevelCollections]]"
   - "[[UWorld/UWorld.UpdateWorldComponents|UWorld::UpdateWorldComponents]]"
   - "[[FTickTaskLevel/FTickTaskLevel|FTickTaskLevel]]"
+  - "[[UActorComponent/UActorComponent.SetupActorComponentTickFunction|UActorComponent::SetupActorComponentTickFunction]]"
+  - "[[FTickFunction/FTickFunction.RegisterTickFunction|FTickFunction::RegisterTickFunction]]"
+  - "[[FTickTaskManager/FTickTaskManager.TickTaskLevelForLevel|FTickTaskManager::TickTaskLevelForLevel]]"
 tags:
   - Level_h
 ---

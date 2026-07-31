@@ -4,6 +4,9 @@ related:
   - "[[UActorComponent/UActorComponent.ExecuteRegisterEvents|UActorComponent::ExecuteRegisterEvents]]"
   - "[[UWorld/UWorld|UWorld]]"
   - "[[AActor/AActor|AActor]]"
+  - "[[UActorComponent/UActorComponent.RegisterAllComponentTickFunctions|UActorComponent::RegisterAllComponentTickFunctions]]"
+  - "[[UActorComponent/UActorComponent.IsCreatedByConstructionScript|UActorComponent::IsCreatedByConstructionScript]]"
+  - "[[AActor/AActor.HandleRegisterComponentWithWorld|AActor::HandleRegisterComponentWithWorld]]"
 tags:
   - ActorComponent_cpp
 ---

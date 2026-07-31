@@ -3,6 +3,7 @@ related:
   - "[[FTickFunction/FTickFunction|FTickFunction]]"
   - "[[FActorTickFunction/FActorTickFunction|FActorTickFunction]]"
   - "[[UActorComponent/UActorComponent.SetComponentTickEnabled|UActorComponent::SetComponentTickEnabled]]"
+  - "[[UActorComponent/UActorComponent.RegisterComponentTickFunctions|UActorComponent::RegisterComponentTickFunctions]]"
 tags:
   - EngineBaseTypes_h
 ---

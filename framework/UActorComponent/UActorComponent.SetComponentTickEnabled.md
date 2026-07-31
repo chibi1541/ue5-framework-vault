@@ -3,6 +3,8 @@ related:
   - "[[UActorComponent/UActorComponent.Activate|UActorComponent::Activate]]"
   - "[[FActorComponentTickFunction/FActorComponentTickFunction|FActorComponentTickFunction]]"
   - "[[FTickFunction/FTickFunction|FTickFunction]]"
+  - "[[UObjectBaseUtility/UObjectBaseUtility.IsTemplate|UObjectBaseUtility::IsTemplate]]"
+  - "[[FTickFunction/FTickFunction.SetTickFunctionEnable|FTickFunction::SetTickFunctionEnable]]"
 tags:
   - ActorComponent_cpp
 ---

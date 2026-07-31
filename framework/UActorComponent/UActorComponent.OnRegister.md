@@ -4,6 +4,7 @@ related:
   - "[[UActorComponent/UActorComponent.Activate|UActorComponent::Activate]]"
   - "[[USceneComponent/USceneComponent|USceneComponent]]"
   - "[[AActor/AActor|AActor]]"
+  - "[[UActorComponent/UActorComponent.RegisterAllComponentTickFunctions|UActorComponent::RegisterAllComponentTickFunctions]]"
 tags:
   - ActorComponent_cpp
 ---

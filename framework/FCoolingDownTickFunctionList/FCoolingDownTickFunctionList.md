@@ -2,6 +2,8 @@
 related:
   - "[[FTickFunction/FTickFunction|FTickFunction]]"
   - "[[FTickTaskLevel/FTickTaskLevel|FTickTaskLevel]]"
+  - "[[FTickTaskLevel/FTickTaskLevel.RemoveTickFunction|FTickTaskLevel::RemoveTickFunction]]"
+  - "[[FTickTaskLevel/FTickTaskLevel.HasTickFunction|FTickTaskLevel::HasTickFunction]]"
 tags:
   - TickTaskManager_cpp
 ---
