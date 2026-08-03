@@ -4,6 +4,7 @@ related:
   - "[[Enum/EObjectFlags|EObjectFlags]]"
   - "[[UActorComponent/UActorComponent.SetComponentTickEnabled|UActorComponent::SetComponentTickEnabled]]"
   - "[[UActorComponent/UActorComponent.SetupActorComponentTickFunction|UActorComponent::SetupActorComponentTickFunction]]"
+  - "[[AActor/AActor.RegisterAllActorTickFunctions|AActor::RegisterAllActorTickFunctions]]"
 tags:
   - UObjectBaseUtility_cpp
 ---

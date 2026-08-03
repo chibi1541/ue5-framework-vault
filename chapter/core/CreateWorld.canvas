@@ -60,7 +60,17 @@
 		{"id":"fn-fticktasklevel-removetickfunction","type":"file","file":"framework/FTickTaskLevel/FTickTaskLevel.RemoveTickFunction.md","x":-2600,"y":4200,"width":460,"height":360},
 		{"id":"fn-fticktasklevel-addtickfunction","type":"file","file":"framework/FTickTaskLevel/FTickTaskLevel.AddTickFunction.md","x":-2080,"y":4200,"width":460,"height":360},
 		{"id":"fn-ftickfunction-isticfunctionregistered","type":"file","file":"framework/FTickFunction/FTickFunction.IsTickFunctionRegistered.md","x":-1560,"y":4200,"width":460,"height":360},
-		{"id":"fn-fticktasklevel-hastickfunction","type":"file","file":"framework/FTickTaskLevel/FTickTaskLevel.HasTickFunction.md","x":-2080,"y":4620,"width":460,"height":360}
+		{"id":"fn-fticktasklevel-hastickfunction","type":"file","file":"framework/FTickTaskLevel/FTickTaskLevel.HasTickFunction.md","x":-2080,"y":4620,"width":460,"height":360},
+		{"id":"fn-ulevel-updatelevelcomponents","type":"file","file":"framework/ULevel/ULevel.UpdateLevelComponents.md","x":-4160,"y":1260,"width":460,"height":360},
+		{"id":"fn-ulevel-incrementalupdatecomponents","type":"file","file":"framework/ULevel/ULevel.IncrementalUpdateComponents.md","x":-4160,"y":1680,"width":460,"height":360},
+		{"id":"fn-sortactorshierarchy","type":"file","file":"framework/SortActorsHierarchy.md","x":-4680,"y":2100,"width":460,"height":360},
+		{"id":"fn-ulevel-incrementalregistercomponents","type":"file","file":"framework/ULevel/ULevel.IncrementalRegisterComponents.md","x":-4160,"y":2100,"width":460,"height":360},
+		{"id":"fn-aactor-getattachparentactor","type":"file","file":"framework/AActor/AActor.GetAttachParentActor.md","x":-5200,"y":2520,"width":460,"height":360},
+		{"id":"fn-aactor-ischildactor","type":"file","file":"framework/AActor/AActor.IsChildActor.md","x":-4680,"y":2520,"width":460,"height":360},
+		{"id":"fn-aactor-incrementalregistercomponents","type":"file","file":"framework/AActor/AActor.IncrementalRegisterComponents.md","x":-4160,"y":2520,"width":460,"height":360},
+		{"id":"fn-aactor-registerallactortickfunctions","type":"file","file":"framework/AActor/AActor.RegisterAllActorTickFunctions.md","x":-4160,"y":2940,"width":460,"height":360},
+		{"id":"fn-aactor-registeractortickfunctions","type":"file","file":"framework/AActor/AActor.RegisterActorTickFunctions.md","x":-4160,"y":3360,"width":460,"height":360},
+		{"id":"type-factorthreadcontext","type":"file","file":"framework/FActorThreadContext/FActorThreadContext.md","x":2020,"y":1260,"width":460,"height":360}
 	],
 	"edges":[
 		{"id":"edge-uengineinit-createworld","fromNode":"createworld-uengine-init","fromSide":"bottom","toNode":"createworld-uworld-createworld","toSide":"top","label":"UWorld::CreateWorld"},
@@ -128,6 +138,22 @@
 		{"id":"edge-registertickfunction-fticktaskmanager-addtickfunction","fromNode":"fn-ftickfunction-registertickfunction","fromSide":"bottom","toNode":"fn-fticktaskmanager-addtickfunction","toSide":"top","label":"FTickTaskManager::AddTickFunction"},
 		{"id":"edge-fticktaskmanager-addtickfunction-ticktasklevelforlevel","fromNode":"fn-fticktaskmanager-addtickfunction","fromSide":"left","toNode":"fn-fticktaskmanager-ticktasklevelforlevel","toSide":"right","label":"TickTaskLevelForLevel"},
 		{"id":"edge-fticktaskmanager-addtickfunction-fticktasklevel-addtickfunction","fromNode":"fn-fticktaskmanager-addtickfunction","fromSide":"bottom","toNode":"fn-fticktasklevel-addtickfunction","toSide":"bottom","label":"Level->AddTickFunction"},
-		{"id":"edge-fticktasklevel-addtickfunction-hastickfunction","fromNode":"fn-fticktasklevel-addtickfunction","fromSide":"bottom","toNode":"fn-fticktasklevel-hastickfunction","toSide":"top","label":"HasTickFunction"}
+		{"id":"edge-fticktasklevel-addtickfunction-hastickfunction","fromNode":"fn-fticktasklevel-addtickfunction","fromSide":"bottom","toNode":"fn-fticktasklevel-hastickfunction","toSide":"top","label":"HasTickFunction"},
+		{"id":"edge-updateworldcomponents-updatelevelcomponents","fromNode":"fn-uworld-updateworldcomponents","fromSide":"left","toNode":"fn-ulevel-updatelevelcomponents","toSide":"right","label":"Level->UpdateLevelComponents"},
+		{"id":"edge-updatelevelcomponents-incrementalupdatecomponents","fromNode":"fn-ulevel-updatelevelcomponents","fromSide":"bottom","toNode":"fn-ulevel-incrementalupdatecomponents","toSide":"top","label":"IncrementalUpdateComponents"},
+		{"id":"edge-incrementalupdatecomponents-sortactorshierarchy","fromNode":"fn-ulevel-incrementalupdatecomponents","fromSide":"bottom","toNode":"fn-sortactorshierarchy","toSide":"top","label":"SortActorsHierarchy"},
+		{"id":"edge-incrementalupdatecomponents-ulevel-incrementalregistercomponents","fromNode":"fn-ulevel-incrementalupdatecomponents","fromSide":"bottom","toNode":"fn-ulevel-incrementalregistercomponents","toSide":"top","label":"IncrementalRegisterComponents"},
+		{"id":"edge-sortactorshierarchy-getattachparentactor","fromNode":"fn-sortactorshierarchy","fromSide":"bottom","toNode":"fn-aactor-getattachparentactor","toSide":"top","label":"GetAttachParentActor"},
+		{"id":"edge-sortactorshierarchy-ischildactor","fromNode":"fn-sortactorshierarchy","fromSide":"bottom","toNode":"fn-aactor-ischildactor","toSide":"top","label":"IsChildActor"},
+		{"id":"edge-ulevel-incrementalregistercomponents-aactor-incrementalregistercomponents","fromNode":"fn-ulevel-incrementalregistercomponents","fromSide":"bottom","toNode":"fn-aactor-incrementalregistercomponents","toSide":"top","label":"Actor->IncrementalRegisterComponents"},
+		{"id":"edge-aactor-incrementalregistercomponents-registerallactortickfunctions","fromNode":"fn-aactor-incrementalregistercomponents","fromSide":"bottom","toNode":"fn-aactor-registerallactortickfunctions","toSide":"top","label":"RegisterAllActorTickFunctions"},
+		{"id":"edge-aactor-incrementalregistercomponents-registercomponentwithworld","fromNode":"fn-aactor-incrementalregistercomponents","fromSide":"right","toNode":"fn-uactorcomponent-registercomponentwithworld","toSide":"left","label":"Component->RegisterComponentWithWorld"},
+		{"id":"edge-registerallactortickfunctions-registeractortickfunctions","fromNode":"fn-aactor-registerallactortickfunctions","fromSide":"bottom","toNode":"fn-aactor-registeractortickfunctions","toSide":"top","label":"RegisterActorTickFunctions"},
+		{"id":"edge-registerallactortickfunctions-registerallcomponenttickfunctions","fromNode":"fn-aactor-registerallactortickfunctions","fromSide":"right","toNode":"fn-uactorcomponent-registerallcomponenttickfunctions","toSide":"left","label":"Component->RegisterAllComponentTickFunctions"},
+		{"id":"edge-registerallactortickfunctions-istemplate","fromNode":"fn-aactor-registerallactortickfunctions","fromSide":"bottom","toNode":"fn-uobjectbaseutility-istemplate","toSide":"left","label":"IsTemplate"},
+		{"id":"edge-registeractortickfunctions-settickfunctionenable","fromNode":"fn-aactor-registeractortickfunctions","fromSide":"right","toNode":"fn-ftickfunction-settickfunctionenable","toSide":"left","label":"PrimaryActorTick.SetTickFunctionEnable"},
+		{"id":"edge-registeractortickfunctions-registertickfunction","fromNode":"fn-aactor-registeractortickfunctions","fromSide":"bottom","toNode":"fn-ftickfunction-registertickfunction","toSide":"left","label":"PrimaryActorTick.RegisterTickFunction"},
+		{"id":"edge-registeractortickfunctions-isticfunctionregistered","fromNode":"fn-aactor-registeractortickfunctions","fromSide":"bottom","toNode":"fn-ftickfunction-isticfunctionregistered","toSide":"left","label":"IsTickFunctionRegistered"},
+		{"id":"edge-type-factorthreadcontext-aactor","fromNode":"type-factorthreadcontext","fromSide":"top","toNode":"type-aactor","toSide":"top","label":"TestRegisterTickFunctions"}
 	]
 }

@@ -7,6 +7,7 @@ related:
   - "[[UActorComponent/UActorComponent.RegisterAllComponentTickFunctions|UActorComponent::RegisterAllComponentTickFunctions]]"
   - "[[UActorComponent/UActorComponent.IsCreatedByConstructionScript|UActorComponent::IsCreatedByConstructionScript]]"
   - "[[AActor/AActor.HandleRegisterComponentWithWorld|AActor::HandleRegisterComponentWithWorld]]"
+  - "[[AActor/AActor.IncrementalRegisterComponents|AActor::IncrementalRegisterComponents]]"
 tags:
   - ActorComponent_cpp
 ---

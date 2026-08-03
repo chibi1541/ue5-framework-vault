@@ -4,6 +4,7 @@ related:
   - "[[UActorComponent/UActorComponent.SetupActorComponentTickFunction|UActorComponent::SetupActorComponentTickFunction]]"
   - "[[FActorComponentTickFunction/FActorComponentTickFunction|FActorComponentTickFunction]]"
   - "[[FTickFunction/FTickFunction.IsTickFunctionRegistered|FTickFunction::IsTickFunctionRegistered]]"
+  - "[[AActor/AActor.RegisterActorTickFunctions|AActor::RegisterActorTickFunctions]]"
 tags:
   - ActorComponent_cpp
 ---

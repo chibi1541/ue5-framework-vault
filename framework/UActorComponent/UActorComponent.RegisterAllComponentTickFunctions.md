@@ -4,6 +4,7 @@ related:
   - "[[UActorComponent/UActorComponent.RegisterComponentTickFunctions|UActorComponent::RegisterComponentTickFunctions]]"
   - "[[UActorComponent/UActorComponent.OnRegister|UActorComponent::OnRegister]]"
   - "[[AActor/AActor.HandleRegisterComponentWithWorld|AActor::HandleRegisterComponentWithWorld]]"
+  - "[[AActor/AActor.RegisterAllActorTickFunctions|AActor::RegisterAllActorTickFunctions]]"
 tags:
   - ActorComponent_cpp
 ---

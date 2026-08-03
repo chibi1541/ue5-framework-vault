@@ -3,6 +3,7 @@ related:
   - "[[FTickFunction/FTickFunction|FTickFunction]]"
   - "[[FTickFunction/FTickFunction.SetTickFunctionEnable|FTickFunction::SetTickFunctionEnable]]"
   - "[[FTickFunction/FTickFunction.RegisterTickFunction|FTickFunction::RegisterTickFunction]]"
+  - "[[AActor/AActor.RegisterActorTickFunctions|AActor::RegisterActorTickFunctions]]"
 tags:
   - EngineBaseTypes_h
 ---

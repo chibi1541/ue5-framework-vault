@@ -2,6 +2,9 @@
 related:
   - "[[AActor/AActor|AActor]]"
   - "[[UActorComponent/UActorComponent.OnRegister|UActorComponent::OnRegister]]"
+  - "[[SortActorsHierarchy|SortActorsHierarchy]]"
+  - "[[AActor/AActor.GetAttachParentActor|AActor::GetAttachParentActor]]"
+  - "[[AActor/AActor.IncrementalRegisterComponents|AActor::IncrementalRegisterComponents]]"
 tags:
   - SceneComponent_h
 ---

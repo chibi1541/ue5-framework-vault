@@ -5,6 +5,7 @@ related:
   - "[[FTickTaskManager/FTickTaskManager.AddTickFunction|FTickTaskManager::AddTickFunction]]"
   - "[[UActorComponent/UActorComponent.SetupActorComponentTickFunction|UActorComponent::SetupActorComponentTickFunction]]"
   - "[[ULevel/ULevel|ULevel]]"
+  - "[[AActor/AActor.RegisterActorTickFunctions|AActor::RegisterActorTickFunctions]]"
 tags:
   - TickTaskManager_cpp
 ---
