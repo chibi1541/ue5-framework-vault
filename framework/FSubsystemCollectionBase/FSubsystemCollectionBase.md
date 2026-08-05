@@ -7,6 +7,8 @@ related:
   - "[[FSubsystemCollectionBase/FSubsystemCollectionBase.ForEachSubsystemOfClass|FSubsystemCollectionBase::ForEachSubsystemOfClass]]"
   - "[[FSubsystemCollectionBase/FSubsystemCollectionBase.FindAndPopulateSubsystemArray|FSubsystemCollectionBase::FindAndPopulateSubsystemArray]]"
   - "[[FSubsystemCollectionInitialization/FSubsystemCollectionInitialization|FSubsystemCollectionInitialization]]"
+  - "[[FObjectSubsystemCollection/FObjectSubsystemCollection|FObjectSubsystemCollection]]"
+  - "[[FSubsystemCollectionBase/FSubsystemCollectionBase.GetSubsystemArrayCopy|FSubsystemCollectionBase::GetSubsystemArrayCopy]]"
 tags:
   - SubsystemCollection_h
 ---

@@ -6,6 +6,9 @@ related:
   - "[[FSubsystemCollectionBase/FSubsystemCollectionBase.ForEachSubsystemOfClass|FSubsystemCollectionBase::ForEachSubsystemOfClass]]"
   - "[[FObjectSubsystemCollection/FObjectSubsystemCollection.ForEachSubsystem|FObjectSubsystemCollection::ForEachSubsystem]]"
   - "[[UWorld/UWorld.UpdateWorldComponents|UWorld::UpdateWorldComponents]]"
+  - "[[FObjectSubsystemCollection/FObjectSubsystemCollection|FObjectSubsystemCollection]]"
+  - "[[UWorldSubsystem/UWorldSubsystem.OnWorldComponentsUpdated|UWorldSubsystem::OnWorldComponentsUpdated]]"
+  - "[[UEnhancedInputWorldSubsystem/UEnhancedInputWorldSubsystem.TickPlayerInput|UEnhancedInputWorldSubsystem::TickPlayerInput]]"
 tags:
   - Subsystem_h
 ---

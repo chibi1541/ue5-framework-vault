@@ -16,6 +16,8 @@ related:
   - "[[UWorld/UWorld.PostInitializeSubsystems|UWorld::PostInitializeSubsystems]]"
   - "[[UWorld/UWorld.UpdateWorldComponents|UWorld::UpdateWorldComponents]]"
   - "[[UActorComponent/UActorComponent.RegisterComponentWithWorld|UActorComponent::RegisterComponentWithWorld]]"
+  - "[[FObjectSubsystemCollection/FObjectSubsystemCollection|FObjectSubsystemCollection]]"
+  - "[[UWorldSubsystem/UWorldSubsystem.OnWorldComponentsUpdated|UWorldSubsystem::OnWorldComponentsUpdated]]"
 tags:
   - World_h
 ---

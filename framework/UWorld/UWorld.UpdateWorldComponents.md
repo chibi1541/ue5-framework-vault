@@ -6,6 +6,8 @@ related:
   - "[[USubsystem/USubsystem|USubsystem]]"
   - "[[UActorComponent/UActorComponent.RegisterComponentWithWorld|UActorComponent::RegisterComponentWithWorld]]"
   - "[[ULevel/ULevel.UpdateLevelComponents|ULevel::UpdateLevelComponents]]"
+  - "[[FObjectSubsystemCollection/FObjectSubsystemCollection.GetSubsystemArrayCopy|FObjectSubsystemCollection::GetSubsystemArrayCopy]]"
+  - "[[UWorldSubsystem/UWorldSubsystem.OnWorldComponentsUpdated|UWorldSubsystem::OnWorldComponentsUpdated]]"
 tags:
   - World_cpp
 ---

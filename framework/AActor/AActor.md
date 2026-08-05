@@ -16,6 +16,9 @@ related:
   - "[[AActor/AActor.RegisterAllActorTickFunctions|AActor::RegisterAllActorTickFunctions]]"
   - "[[AActor/AActor.RegisterActorTickFunctions|AActor::RegisterActorTickFunctions]]"
   - "[[FActorThreadContext/FActorThreadContext|FActorThreadContext]]"
+  - "[[AActor/AActor.GetComponents|AActor::GetComponents]]"
+  - "[[AActor/AActor.ForEachComponent_Internal|AActor::ForEachComponent_Internal]]"
+  - "[[GetUnregisteredParent|GetUnregisteredParent]]"
 tags:
   - Actor_h
 ---

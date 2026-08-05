@@ -5,6 +5,7 @@ related:
   - "[[SortActorsHierarchy|SortActorsHierarchy]]"
   - "[[AActor/AActor.GetAttachParentActor|AActor::GetAttachParentActor]]"
   - "[[AActor/AActor.IncrementalRegisterComponents|AActor::IncrementalRegisterComponents]]"
+  - "[[GetUnregisteredParent|GetUnregisteredParent]]"
 tags:
   - SceneComponent_h
 ---

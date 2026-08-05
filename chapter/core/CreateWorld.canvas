@@ -1,159 +1,1428 @@
 {
-	"nodes":[
-		{"id":"createworld-uengine-init","type":"file","file":"framework/UEngine/UEngine.Init.md","x":0,"y":0,"width":460,"height":360},
-		{"id":"createworld-uworld-createworld","type":"file","file":"framework/UWorld/UWorld.CreateWorld.md","x":0,"y":420,"width":460,"height":360},
-		{"id":"createworld-uworld-initializenewworld","type":"file","file":"framework/UWorld/UWorld.InitializeNewWorld.md","x":0,"y":840,"width":460,"height":360},
-		{"id":"type-fworldinitializationvalues","type":"file","file":"framework/FWorldInitializationValues/FWorldInitializationValues.md","x":980,"y":0,"width":460,"height":360},
-		{"id":"type-uworld","type":"file","file":"framework/UWorld/UWorld.md","x":980,"y":420,"width":460,"height":360},
-		{"id":"type-ulevel","type":"file","file":"framework/ULevel/ULevel.md","x":980,"y":840,"width":460,"height":360},
-		{"id":"type-aactor","type":"file","file":"framework/AActor/AActor.md","x":980,"y":1260,"width":460,"height":360},
-		{"id":"type-uscenecomponent","type":"file","file":"framework/USceneComponent/USceneComponent.md","x":980,"y":1680,"width":460,"height":360},
-		{"id":"type-uobject","type":"file","file":"framework/UObject/UObject.md","x":1500,"y":420,"width":460,"height":360},
-		{"id":"type-uobjectbaseutility","type":"file","file":"framework/UObjectBaseUtility/UObjectBaseUtility.md","x":1500,"y":840,"width":460,"height":360},
-		{"id":"type-uobjectbase","type":"file","file":"framework/UObjectBase/UObjectBase.md","x":1500,"y":1260,"width":460,"height":360},
-		{"id":"type-eobjectflags","type":"file","file":"framework/Enum/EObjectFlags.md","x":1500,"y":1680,"width":460,"height":360},
-		{"id":"type-flevelcollection","type":"file","file":"framework/FLevelCollection/FLevelCollection.md","x":1500,"y":0,"width":460,"height":360},
-		{"id":"type-elevelcollectiontype","type":"file","file":"framework/Enum/ELevelCollectionType.md","x":2020,"y":0,"width":460,"height":360},
-		{"id":"type-usubsystem","type":"file","file":"framework/USubsystem/USubsystem.md","x":980,"y":2100,"width":460,"height":360},
-		{"id":"type-fsubsystemcollectionbase","type":"file","file":"framework/FSubsystemCollectionBase/FSubsystemCollectionBase.md","x":1500,"y":2100,"width":460,"height":360},
-		{"id":"type-factorspawnparameters","type":"file","file":"framework/FActorSpawnParameters/FActorSpawnParameters.md","x":980,"y":2520,"width":460,"height":360},
-		{"id":"type-espawnactorcollisionhandlingmethod","type":"file","file":"framework/Enum/ESpawnActorCollisionHandlingMethod.md","x":1500,"y":2520,"width":460,"height":360},
-		{"id":"fn-uworld-initworld","type":"file","file":"framework/UWorld/UWorld.InitWorld.md","x":0,"y":1260,"width":460,"height":360},
-		{"id":"fn-uworld-initializesubsystems","type":"file","file":"framework/UWorld/UWorld.InitializeSubsystems.md","x":-2080,"y":1680,"width":460,"height":360},
-		{"id":"fn-uworld-getworldsettings","type":"file","file":"framework/UWorld/UWorld.GetWorldSettings.md","x":-1560,"y":1680,"width":460,"height":360},
-		{"id":"fn-uworld-getdefaultphysicsvolume","type":"file","file":"framework/UWorld/UWorld.GetDefaultPhysicsVolume.md","x":-1040,"y":1680,"width":460,"height":360},
-		{"id":"fn-uworld-conditionallycreatedefaultlevelcollections","type":"file","file":"framework/UWorld/UWorld.ConditionallyCreateDefaultLevelCollections.md","x":-520,"y":1680,"width":460,"height":360},
-		{"id":"fn-uworld-postinitializesubsystems","type":"file","file":"framework/UWorld/UWorld.PostInitializeSubsystems.md","x":0,"y":1680,"width":460,"height":360},
-		{"id":"fn-fsubsystemcollectionbase-initialize","type":"file","file":"framework/FSubsystemCollectionBase/FSubsystemCollectionBase.Initialize.md","x":-2080,"y":2100,"width":460,"height":360},
-		{"id":"fn-uworld-findoraddcollectionbytype-index","type":"file","file":"framework/UWorld/UWorld.FindOrAddCollectionByType_Index.md","x":-520,"y":2100,"width":460,"height":360},
-		{"id":"fn-fobjectsubsystemcollection-foreachsubsystem","type":"file","file":"framework/FObjectSubsystemCollection/FObjectSubsystemCollection.ForEachSubsystem.md","x":0,"y":2100,"width":460,"height":360},
-		{"id":"fn-fsubsystemcollectionbase-addandinitializesubsystem","type":"file","file":"framework/FSubsystemCollectionBase/FSubsystemCollectionBase.AddAndInitializeSubsystem.md","x":-2080,"y":2520,"width":460,"height":360},
-		{"id":"fn-uworld-findcollectionindexbytype","type":"file","file":"framework/UWorld/UWorld.FindCollectionIndexByType.md","x":-520,"y":2520,"width":460,"height":360},
-		{"id":"fn-fsubsystemcollectionbase-foreachsubsystemofclass","type":"file","file":"framework/FSubsystemCollectionBase/FSubsystemCollectionBase.ForEachSubsystemOfClass.md","x":0,"y":2520,"width":460,"height":360},
-		{"id":"fn-fsubsystemcollectionbase-addandinitializevalidatedsubsystem","type":"file","file":"framework/FSubsystemCollectionBase/FSubsystemCollectionBase.AddAndInitializeValidatedSubsystem.md","x":-2080,"y":2940,"width":460,"height":360},
-		{"id":"fn-fsubsystemcollectionbase-findandpopulatesubsystemarray","type":"file","file":"framework/FSubsystemCollectionBase/FSubsystemCollectionBase.FindAndPopulateSubsystemArray.md","x":0,"y":2940,"width":460,"height":360},
-		{"id":"type-fsubsystemcollectioninitialization","type":"file","file":"framework/FSubsystemCollectionInitialization/FSubsystemCollectionInitialization.md","x":2020,"y":2100,"width":460,"height":360},
-		{"id":"fn-uworld-updateworldcomponents","type":"file","file":"framework/UWorld/UWorld.UpdateWorldComponents.md","x":-2600,"y":1260,"width":460,"height":360},
-		{"id":"fn-uactorcomponent-registercomponentwithworld","type":"file","file":"framework/UActorComponent/UActorComponent.RegisterComponentWithWorld.md","x":-2600,"y":1680,"width":460,"height":360},
-		{"id":"fn-uactorcomponent-executeregisterevents","type":"file","file":"framework/UActorComponent/UActorComponent.ExecuteRegisterEvents.md","x":-2600,"y":2100,"width":460,"height":360},
-		{"id":"fn-uactorcomponent-onregister","type":"file","file":"framework/UActorComponent/UActorComponent.OnRegister.md","x":-2600,"y":2520,"width":460,"height":360},
-		{"id":"fn-uactorcomponent-activate","type":"file","file":"framework/UActorComponent/UActorComponent.Activate.md","x":-2600,"y":2940,"width":460,"height":360},
-		{"id":"fn-uactorcomponent-setcomponenttickenabled","type":"file","file":"framework/UActorComponent/UActorComponent.SetComponentTickEnabled.md","x":-2600,"y":3360,"width":460,"height":360},
-		{"id":"type-ftickfunction","type":"file","file":"framework/FTickFunction/FTickFunction.md","x":980,"y":2940,"width":460,"height":360},
-		{"id":"type-etickinggroup","type":"file","file":"framework/Enum/ETickingGroup.md","x":1500,"y":2940,"width":460,"height":360},
-		{"id":"type-factorcomponenttickfunction","type":"file","file":"framework/FActorComponentTickFunction/FActorComponentTickFunction.md","x":980,"y":3360,"width":460,"height":360},
-		{"id":"type-factortickfunction","type":"file","file":"framework/FActorTickFunction/FActorTickFunction.md","x":1500,"y":3360,"width":460,"height":360},
-		{"id":"type-fticktasklevel","type":"file","file":"framework/FTickTaskLevel/FTickTaskLevel.md","x":980,"y":3780,"width":460,"height":360},
-		{"id":"type-fcoolingdowntickfunctionlist","type":"file","file":"framework/FCoolingDownTickFunctionList/FCoolingDownTickFunctionList.md","x":1500,"y":3780,"width":460,"height":360},
-		{"id":"type-ftickscheduledetails","type":"file","file":"framework/FTickScheduleDetails/FTickScheduleDetails.md","x":2020,"y":3780,"width":460,"height":360},
-		{"id":"type-ecomponentcreationmethod","type":"file","file":"framework/Enum/EComponentCreationMethod.md","x":2020,"y":2940,"width":460,"height":360},
-		{"id":"fn-uactorcomponent-iscreatedbyconstructionscript","type":"file","file":"framework/UActorComponent/UActorComponent.IsCreatedByConstructionScript.md","x":-3640,"y":2100,"width":460,"height":360},
-		{"id":"fn-aactor-handleregistercomponentwithworld","type":"file","file":"framework/AActor/AActor.HandleRegisterComponentWithWorld.md","x":-3120,"y":2100,"width":460,"height":360},
-		{"id":"fn-uactorcomponent-registerallcomponenttickfunctions","type":"file","file":"framework/UActorComponent/UActorComponent.RegisterAllComponentTickFunctions.md","x":-3120,"y":2520,"width":460,"height":360},
-		{"id":"fn-uactorcomponent-registercomponenttickfunctions","type":"file","file":"framework/UActorComponent/UActorComponent.RegisterComponentTickFunctions.md","x":-3120,"y":2940,"width":460,"height":360},
-		{"id":"fn-uactorcomponent-setupactorcomponenttickfunction","type":"file","file":"framework/UActorComponent/UActorComponent.SetupActorComponentTickFunction.md","x":-3120,"y":3360,"width":460,"height":360},
-		{"id":"fn-ftickfunction-registertickfunction","type":"file","file":"framework/FTickFunction/FTickFunction.RegisterTickFunction.md","x":-3120,"y":3780,"width":460,"height":360},
-		{"id":"fn-ftickfunction-settickfunctionenable","type":"file","file":"framework/FTickFunction/FTickFunction.SetTickFunctionEnable.md","x":-2600,"y":3780,"width":460,"height":360},
-		{"id":"fn-uobjectbaseutility-istemplate","type":"file","file":"framework/UObjectBaseUtility/UObjectBaseUtility.IsTemplate.md","x":-2080,"y":3780,"width":460,"height":360},
-		{"id":"fn-fticktaskmanager-ticktasklevelforlevel","type":"file","file":"framework/FTickTaskManager/FTickTaskManager.TickTaskLevelForLevel.md","x":-3640,"y":4200,"width":460,"height":360},
-		{"id":"fn-fticktaskmanager-addtickfunction","type":"file","file":"framework/FTickTaskManager/FTickTaskManager.AddTickFunction.md","x":-3120,"y":4200,"width":460,"height":360},
-		{"id":"fn-fticktasklevel-removetickfunction","type":"file","file":"framework/FTickTaskLevel/FTickTaskLevel.RemoveTickFunction.md","x":-2600,"y":4200,"width":460,"height":360},
-		{"id":"fn-fticktasklevel-addtickfunction","type":"file","file":"framework/FTickTaskLevel/FTickTaskLevel.AddTickFunction.md","x":-2080,"y":4200,"width":460,"height":360},
-		{"id":"fn-ftickfunction-isticfunctionregistered","type":"file","file":"framework/FTickFunction/FTickFunction.IsTickFunctionRegistered.md","x":-1560,"y":4200,"width":460,"height":360},
-		{"id":"fn-fticktasklevel-hastickfunction","type":"file","file":"framework/FTickTaskLevel/FTickTaskLevel.HasTickFunction.md","x":-2080,"y":4620,"width":460,"height":360},
-		{"id":"fn-ulevel-updatelevelcomponents","type":"file","file":"framework/ULevel/ULevel.UpdateLevelComponents.md","x":-4160,"y":1260,"width":460,"height":360},
-		{"id":"fn-ulevel-incrementalupdatecomponents","type":"file","file":"framework/ULevel/ULevel.IncrementalUpdateComponents.md","x":-4160,"y":1680,"width":460,"height":360},
-		{"id":"fn-sortactorshierarchy","type":"file","file":"framework/SortActorsHierarchy.md","x":-4680,"y":2100,"width":460,"height":360},
-		{"id":"fn-ulevel-incrementalregistercomponents","type":"file","file":"framework/ULevel/ULevel.IncrementalRegisterComponents.md","x":-4160,"y":2100,"width":460,"height":360},
-		{"id":"fn-aactor-getattachparentactor","type":"file","file":"framework/AActor/AActor.GetAttachParentActor.md","x":-5200,"y":2520,"width":460,"height":360},
-		{"id":"fn-aactor-ischildactor","type":"file","file":"framework/AActor/AActor.IsChildActor.md","x":-4680,"y":2520,"width":460,"height":360},
-		{"id":"fn-aactor-incrementalregistercomponents","type":"file","file":"framework/AActor/AActor.IncrementalRegisterComponents.md","x":-4160,"y":2520,"width":460,"height":360},
-		{"id":"fn-aactor-registerallactortickfunctions","type":"file","file":"framework/AActor/AActor.RegisterAllActorTickFunctions.md","x":-4160,"y":2940,"width":460,"height":360},
-		{"id":"fn-aactor-registeractortickfunctions","type":"file","file":"framework/AActor/AActor.RegisterActorTickFunctions.md","x":-4160,"y":3360,"width":460,"height":360},
-		{"id":"type-factorthreadcontext","type":"file","file":"framework/FActorThreadContext/FActorThreadContext.md","x":2020,"y":1260,"width":460,"height":360}
-	],
-	"edges":[
-		{"id":"edge-uengineinit-createworld","fromNode":"createworld-uengine-init","fromSide":"bottom","toNode":"createworld-uworld-createworld","toSide":"top","label":"UWorld::CreateWorld"},
-		{"id":"edge-type-uworld-fworldinit","fromNode":"type-uworld","fromSide":"top","toNode":"type-fworldinitializationvalues","toSide":"bottom","label":"InitializationValues"},
-		{"id":"edge-type-uworld-ulevel","fromNode":"type-uworld","fromSide":"bottom","toNode":"type-ulevel","toSide":"top","label":"PersistentLevel"},
-		{"id":"edge-type-ulevel-aactor","fromNode":"type-ulevel","fromSide":"bottom","toNode":"type-aactor","toSide":"top","label":"Actors"},
-		{"id":"edge-type-aactor-uscenecomponent","fromNode":"type-aactor","fromSide":"bottom","toNode":"type-uscenecomponent","toSide":"top","label":"RootComponent"},
-		{"id":"edge-type-uworld-uobject","fromNode":"type-uworld","fromSide":"right","toNode":"type-uobject","toSide":"left","label":"inherits"},
-		{"id":"edge-type-ulevel-uobject","fromNode":"type-ulevel","fromSide":"right","toNode":"type-uobject","toSide":"left","label":"inherits"},
-		{"id":"edge-type-aactor-uobject","fromNode":"type-aactor","fromSide":"right","toNode":"type-uobject","toSide":"left","label":"inherits"},
-		{"id":"edge-type-uobject-uobjectbaseutility","fromNode":"type-uobject","fromSide":"bottom","toNode":"type-uobjectbaseutility","toSide":"top","label":"inherits"},
-		{"id":"edge-type-uobjectbaseutility-uobjectbase","fromNode":"type-uobjectbaseutility","fromSide":"bottom","toNode":"type-uobjectbase","toSide":"top","label":"inherits"},
-		{"id":"edge-type-uobjectbase-eobjectflags","fromNode":"type-uobjectbase","fromSide":"bottom","toNode":"type-eobjectflags","toSide":"top","label":"ObjectFlags"},
-		{"id":"edge-createworld-initializenewworld","fromNode":"createworld-uworld-createworld","fromSide":"bottom","toNode":"createworld-uworld-initializenewworld","toSide":"top","label":"InitializeNewWorld"},
-		{"id":"edge-type-uworld-flevelcollection","fromNode":"type-uworld","fromSide":"top","toNode":"type-flevelcollection","toSide":"bottom","label":"LevelCollections"},
-		{"id":"edge-type-flevelcollection-ulevel","fromNode":"type-flevelcollection","fromSide":"bottom","toNode":"type-ulevel","toSide":"top","label":"PersistentLevel/Levels"},
-		{"id":"edge-type-flevelcollection-elevelcollectiontype","fromNode":"type-flevelcollection","fromSide":"right","toNode":"type-elevelcollectiontype","toSide":"left","label":"CollectionType"},
-		{"id":"edge-type-fsubsystemcollectionbase-usubsystem","fromNode":"type-fsubsystemcollectionbase","fromSide":"left","toNode":"type-usubsystem","toSide":"right","label":"SubsystemMap"},
-		{"id":"edge-type-factorspawnparameters-espawncollisionhandling","fromNode":"type-factorspawnparameters","fromSide":"right","toNode":"type-espawnactorcollisionhandlingmethod","toSide":"left","label":"SpawnCollisionHandlingOverride"},
-		{"id":"edge-initializenewworld-initworld","fromNode":"createworld-uworld-initializenewworld","fromSide":"bottom","toNode":"fn-uworld-initworld","toSide":"top","label":"InitWorld"},
-		{"id":"edge-initworld-initializesubsystems","fromNode":"fn-uworld-initworld","fromSide":"bottom","toNode":"fn-uworld-initializesubsystems","toSide":"top","label":"InitializeSubsystems"},
-		{"id":"edge-initworld-getworldsettings","fromNode":"fn-uworld-initworld","fromSide":"bottom","toNode":"fn-uworld-getworldsettings","toSide":"top","label":"GetWorldSettings"},
-		{"id":"edge-initworld-getdefaultphysicsvolume","fromNode":"fn-uworld-initworld","fromSide":"bottom","toNode":"fn-uworld-getdefaultphysicsvolume","toSide":"top","label":"GetDefaultPhysicsVolume"},
-		{"id":"edge-initworld-conditionallycreatedefaultlevelcollections","fromNode":"fn-uworld-initworld","fromSide":"bottom","toNode":"fn-uworld-conditionallycreatedefaultlevelcollections","toSide":"top","label":"ConditionallyCreateDefaultLevelCollections"},
-		{"id":"edge-initworld-postinitializesubsystems","fromNode":"fn-uworld-initworld","fromSide":"bottom","toNode":"fn-uworld-postinitializesubsystems","toSide":"top","label":"PostInitializeSubsystems"},
-		{"id":"edge-initializesubsystems-fsubsystemcollectionbaseinitialize","fromNode":"fn-uworld-initializesubsystems","fromSide":"bottom","toNode":"fn-fsubsystemcollectionbase-initialize","toSide":"top","label":"SubsystemCollection.Initialize"},
-		{"id":"edge-ccdlc-findoraddcollectionbytype-index","fromNode":"fn-uworld-conditionallycreatedefaultlevelcollections","fromSide":"bottom","toNode":"fn-uworld-findoraddcollectionbytype-index","toSide":"top","label":"FindOrAddCollectionByType_Index"},
-		{"id":"edge-ccdlc-findcollectionindexbytype","fromNode":"fn-uworld-conditionallycreatedefaultlevelcollections","fromSide":"right","toNode":"fn-uworld-findcollectionindexbytype","toSide":"left","label":"FindCollectionByType"},
-		{"id":"edge-postinitializesubsystems-foreachsubsystem","fromNode":"fn-uworld-postinitializesubsystems","fromSide":"bottom","toNode":"fn-fobjectsubsystemcollection-foreachsubsystem","toSide":"top","label":"ForEachSubsystem"},
-		{"id":"edge-fsubsystemcollectionbaseinitialize-addandinitializesubsystem","fromNode":"fn-fsubsystemcollectionbase-initialize","fromSide":"bottom","toNode":"fn-fsubsystemcollectionbase-addandinitializesubsystem","toSide":"top","label":"AddAndInitializeSubsystem"},
-		{"id":"edge-findoraddcollectionbytype-index-findcollectionindexbytype","fromNode":"fn-uworld-findoraddcollectionbytype-index","fromSide":"bottom","toNode":"fn-uworld-findcollectionindexbytype","toSide":"top","label":"FindCollectionIndexByType"},
-		{"id":"edge-foreachsubsystem-foreachsubsystemofclass","fromNode":"fn-fobjectsubsystemcollection-foreachsubsystem","fromSide":"bottom","toNode":"fn-fsubsystemcollectionbase-foreachsubsystemofclass","toSide":"top","label":"ForEachSubsystemOfClass"},
-		{"id":"edge-addandinitializesubsystem-addandinitializevalidatedsubsystem","fromNode":"fn-fsubsystemcollectionbase-addandinitializesubsystem","fromSide":"bottom","toNode":"fn-fsubsystemcollectionbase-addandinitializevalidatedsubsystem","toSide":"top","label":"AddAndInitializeValidatedSubsystem"},
-		{"id":"edge-foreachsubsystemofclass-findandpopulatesubsystemarray","fromNode":"fn-fsubsystemcollectionbase-foreachsubsystemofclass","fromSide":"bottom","toNode":"fn-fsubsystemcollectionbase-findandpopulatesubsystemarray","toSide":"top","label":"FindAndPopulateSubsystemArray"},
-		{"id":"edge-type-fsubsystemcollectionbase-fsubsystemcollectioninitialization","fromNode":"type-fsubsystemcollectionbase","fromSide":"right","toNode":"type-fsubsystemcollectioninitialization","toSide":"left","label":"FSubsystemCollectionInitialization"},
-		{"id":"edge-initializenewworld-updateworldcomponents","fromNode":"createworld-uworld-initializenewworld","fromSide":"left","toNode":"fn-uworld-updateworldcomponents","toSide":"top","label":"UpdateWorldComponents"},
-		{"id":"edge-updateworldcomponents-registercomponentwithworld","fromNode":"fn-uworld-updateworldcomponents","fromSide":"bottom","toNode":"fn-uactorcomponent-registercomponentwithworld","toSide":"top","label":"LineBatcher->RegisterComponentWithWorld"},
-		{"id":"edge-registercomponentwithworld-executeregisterevents","fromNode":"fn-uactorcomponent-registercomponentwithworld","fromSide":"bottom","toNode":"fn-uactorcomponent-executeregisterevents","toSide":"top","label":"ExecuteRegisterEvents"},
-		{"id":"edge-executeregisterevents-onregister","fromNode":"fn-uactorcomponent-executeregisterevents","fromSide":"bottom","toNode":"fn-uactorcomponent-onregister","toSide":"top","label":"OnRegister"},
-		{"id":"edge-onregister-activate","fromNode":"fn-uactorcomponent-onregister","fromSide":"bottom","toNode":"fn-uactorcomponent-activate","toSide":"top","label":"Activate"},
-		{"id":"edge-activate-setcomponenttickenabled","fromNode":"fn-uactorcomponent-activate","fromSide":"bottom","toNode":"fn-uactorcomponent-setcomponenttickenabled","toSide":"top","label":"SetComponentTickEnabled"},
-		{"id":"edge-type-ftickfunction-etickinggroup","fromNode":"type-ftickfunction","fromSide":"right","toNode":"type-etickinggroup","toSide":"left","label":"TickGroup"},
-		{"id":"edge-type-factorcomponenttickfunction-ftickfunction","fromNode":"type-factorcomponenttickfunction","fromSide":"top","toNode":"type-ftickfunction","toSide":"bottom","label":"inherits"},
-		{"id":"edge-type-factortickfunction-ftickfunction","fromNode":"type-factortickfunction","fromSide":"top","toNode":"type-ftickfunction","toSide":"bottom","label":"inherits"},
-		{"id":"edge-type-factortickfunction-aactor","fromNode":"type-factortickfunction","fromSide":"right","toNode":"type-aactor","toSide":"right","label":"Target"},
-		{"id":"edge-type-fticktasklevel-ftickfunction","fromNode":"type-fticktasklevel","fromSide":"left","toNode":"type-ftickfunction","toSide":"left","label":"AllEnabled/DisabledTickFunctions"},
-		{"id":"edge-type-fticktasklevel-fcoolingdowntickfunctionlist","fromNode":"type-fticktasklevel","fromSide":"right","toNode":"type-fcoolingdowntickfunctionlist","toSide":"left","label":"AllCoolingDownTickFunctions"},
-		{"id":"edge-type-fticktasklevel-ftickscheduledetails","fromNode":"type-fticktasklevel","fromSide":"bottom","toNode":"type-ftickscheduledetails","toSide":"bottom","label":"TickFunctionsToReschedule"},
-		{"id":"edge-type-fcoolingdowntickfunctionlist-ftickfunction","fromNode":"type-fcoolingdowntickfunctionlist","fromSide":"top","toNode":"type-ftickfunction","toSide":"bottom","label":"Head"},
-		{"id":"edge-type-ulevel-fticktasklevel","fromNode":"type-ulevel","fromSide":"left","toNode":"type-fticktasklevel","toSide":"top","label":"TickTaskLevel"},
-		{"id":"edge-registercomponentwithworld-handleregistercomponentwithworld","fromNode":"fn-uactorcomponent-registercomponentwithworld","fromSide":"left","toNode":"fn-aactor-handleregistercomponentwithworld","toSide":"top","label":"MyOwner->HandleRegisterComponentWithWorld"},
-		{"id":"edge-registercomponentwithworld-iscreatedbyconstructionscript","fromNode":"fn-uactorcomponent-registercomponentwithworld","fromSide":"left","toNode":"fn-uactorcomponent-iscreatedbyconstructionscript","toSide":"top","label":"IsCreatedByConstructionScript"},
-		{"id":"edge-handleregistercomponentwithworld-registerallcomponenttickfunctions","fromNode":"fn-aactor-handleregistercomponentwithworld","fromSide":"bottom","toNode":"fn-uactorcomponent-registerallcomponenttickfunctions","toSide":"top","label":"RegisterAllComponentTickFunctions"},
-		{"id":"edge-registerallcomponenttickfunctions-registercomponenttickfunctions","fromNode":"fn-uactorcomponent-registerallcomponenttickfunctions","fromSide":"bottom","toNode":"fn-uactorcomponent-registercomponenttickfunctions","toSide":"top","label":"RegisterComponentTickFunctions"},
-		{"id":"edge-registercomponenttickfunctions-setupactorcomponenttickfunction","fromNode":"fn-uactorcomponent-registercomponenttickfunctions","fromSide":"bottom","toNode":"fn-uactorcomponent-setupactorcomponenttickfunction","toSide":"top","label":"SetupActorComponentTickFunction"},
-		{"id":"edge-setupactorcomponenttickfunction-registertickfunction","fromNode":"fn-uactorcomponent-setupactorcomponenttickfunction","fromSide":"bottom","toNode":"fn-ftickfunction-registertickfunction","toSide":"top","label":"RegisterTickFunction"},
-		{"id":"edge-setupactorcomponenttickfunction-settickfunctionenable","fromNode":"fn-uactorcomponent-setupactorcomponenttickfunction","fromSide":"bottom","toNode":"fn-ftickfunction-settickfunctionenable","toSide":"top","label":"SetTickFunctionEnable"},
-		{"id":"edge-setupactorcomponenttickfunction-istemplate","fromNode":"fn-uactorcomponent-setupactorcomponenttickfunction","fromSide":"right","toNode":"fn-uobjectbaseutility-istemplate","toSide":"top","label":"IsTemplate"},
-		{"id":"edge-setcomponenttickenabled-settickfunctionenable","fromNode":"fn-uactorcomponent-setcomponenttickenabled","fromSide":"bottom","toNode":"fn-ftickfunction-settickfunctionenable","toSide":"top","label":"PrimaryComponentTick.SetTickFunctionEnable"},
-		{"id":"edge-setcomponenttickenabled-istemplate","fromNode":"fn-uactorcomponent-setcomponenttickenabled","fromSide":"right","toNode":"fn-uobjectbaseutility-istemplate","toSide":"top","label":"IsTemplate"},
-		{"id":"edge-settickfunctionenable-isticfunctionregistered","fromNode":"fn-ftickfunction-settickfunctionenable","fromSide":"right","toNode":"fn-ftickfunction-isticfunctionregistered","toSide":"top","label":"IsTickFunctionRegistered"},
-		{"id":"edge-settickfunctionenable-removetickfunction","fromNode":"fn-ftickfunction-settickfunctionenable","fromSide":"bottom","toNode":"fn-fticktasklevel-removetickfunction","toSide":"top","label":"TickTaskLevel->RemoveTickFunction"},
-		{"id":"edge-settickfunctionenable-addtickfunction","fromNode":"fn-ftickfunction-settickfunctionenable","fromSide":"bottom","toNode":"fn-fticktasklevel-addtickfunction","toSide":"top","label":"TickTaskLevel->AddTickFunction"},
-		{"id":"edge-registertickfunction-isticfunctionregistered","fromNode":"fn-ftickfunction-registertickfunction","fromSide":"top","toNode":"fn-ftickfunction-isticfunctionregistered","toSide":"top","label":"IsTickFunctionRegistered"},
-		{"id":"edge-registertickfunction-fticktaskmanager-addtickfunction","fromNode":"fn-ftickfunction-registertickfunction","fromSide":"bottom","toNode":"fn-fticktaskmanager-addtickfunction","toSide":"top","label":"FTickTaskManager::AddTickFunction"},
-		{"id":"edge-fticktaskmanager-addtickfunction-ticktasklevelforlevel","fromNode":"fn-fticktaskmanager-addtickfunction","fromSide":"left","toNode":"fn-fticktaskmanager-ticktasklevelforlevel","toSide":"right","label":"TickTaskLevelForLevel"},
-		{"id":"edge-fticktaskmanager-addtickfunction-fticktasklevel-addtickfunction","fromNode":"fn-fticktaskmanager-addtickfunction","fromSide":"bottom","toNode":"fn-fticktasklevel-addtickfunction","toSide":"bottom","label":"Level->AddTickFunction"},
-		{"id":"edge-fticktasklevel-addtickfunction-hastickfunction","fromNode":"fn-fticktasklevel-addtickfunction","fromSide":"bottom","toNode":"fn-fticktasklevel-hastickfunction","toSide":"top","label":"HasTickFunction"},
-		{"id":"edge-updateworldcomponents-updatelevelcomponents","fromNode":"fn-uworld-updateworldcomponents","fromSide":"left","toNode":"fn-ulevel-updatelevelcomponents","toSide":"right","label":"Level->UpdateLevelComponents"},
-		{"id":"edge-updatelevelcomponents-incrementalupdatecomponents","fromNode":"fn-ulevel-updatelevelcomponents","fromSide":"bottom","toNode":"fn-ulevel-incrementalupdatecomponents","toSide":"top","label":"IncrementalUpdateComponents"},
-		{"id":"edge-incrementalupdatecomponents-sortactorshierarchy","fromNode":"fn-ulevel-incrementalupdatecomponents","fromSide":"bottom","toNode":"fn-sortactorshierarchy","toSide":"top","label":"SortActorsHierarchy"},
-		{"id":"edge-incrementalupdatecomponents-ulevel-incrementalregistercomponents","fromNode":"fn-ulevel-incrementalupdatecomponents","fromSide":"bottom","toNode":"fn-ulevel-incrementalregistercomponents","toSide":"top","label":"IncrementalRegisterComponents"},
-		{"id":"edge-sortactorshierarchy-getattachparentactor","fromNode":"fn-sortactorshierarchy","fromSide":"bottom","toNode":"fn-aactor-getattachparentactor","toSide":"top","label":"GetAttachParentActor"},
-		{"id":"edge-sortactorshierarchy-ischildactor","fromNode":"fn-sortactorshierarchy","fromSide":"bottom","toNode":"fn-aactor-ischildactor","toSide":"top","label":"IsChildActor"},
-		{"id":"edge-ulevel-incrementalregistercomponents-aactor-incrementalregistercomponents","fromNode":"fn-ulevel-incrementalregistercomponents","fromSide":"bottom","toNode":"fn-aactor-incrementalregistercomponents","toSide":"top","label":"Actor->IncrementalRegisterComponents"},
-		{"id":"edge-aactor-incrementalregistercomponents-registerallactortickfunctions","fromNode":"fn-aactor-incrementalregistercomponents","fromSide":"bottom","toNode":"fn-aactor-registerallactortickfunctions","toSide":"top","label":"RegisterAllActorTickFunctions"},
-		{"id":"edge-aactor-incrementalregistercomponents-registercomponentwithworld","fromNode":"fn-aactor-incrementalregistercomponents","fromSide":"right","toNode":"fn-uactorcomponent-registercomponentwithworld","toSide":"left","label":"Component->RegisterComponentWithWorld"},
-		{"id":"edge-registerallactortickfunctions-registeractortickfunctions","fromNode":"fn-aactor-registerallactortickfunctions","fromSide":"bottom","toNode":"fn-aactor-registeractortickfunctions","toSide":"top","label":"RegisterActorTickFunctions"},
-		{"id":"edge-registerallactortickfunctions-registerallcomponenttickfunctions","fromNode":"fn-aactor-registerallactortickfunctions","fromSide":"right","toNode":"fn-uactorcomponent-registerallcomponenttickfunctions","toSide":"left","label":"Component->RegisterAllComponentTickFunctions"},
-		{"id":"edge-registerallactortickfunctions-istemplate","fromNode":"fn-aactor-registerallactortickfunctions","fromSide":"bottom","toNode":"fn-uobjectbaseutility-istemplate","toSide":"left","label":"IsTemplate"},
-		{"id":"edge-registeractortickfunctions-settickfunctionenable","fromNode":"fn-aactor-registeractortickfunctions","fromSide":"right","toNode":"fn-ftickfunction-settickfunctionenable","toSide":"left","label":"PrimaryActorTick.SetTickFunctionEnable"},
-		{"id":"edge-registeractortickfunctions-registertickfunction","fromNode":"fn-aactor-registeractortickfunctions","fromSide":"bottom","toNode":"fn-ftickfunction-registertickfunction","toSide":"left","label":"PrimaryActorTick.RegisterTickFunction"},
-		{"id":"edge-registeractortickfunctions-isticfunctionregistered","fromNode":"fn-aactor-registeractortickfunctions","fromSide":"bottom","toNode":"fn-ftickfunction-isticfunctionregistered","toSide":"left","label":"IsTickFunctionRegistered"},
-		{"id":"edge-type-factorthreadcontext-aactor","fromNode":"type-factorthreadcontext","fromSide":"top","toNode":"type-aactor","toSide":"top","label":"TestRegisterTickFunctions"}
-	]
+ "nodes": [
+  {
+   "id": "createworld-uengine-init",
+   "type": "file",
+   "file": "framework/UEngine/UEngine.Init.md",
+   "x": 0,
+   "y": 0,
+   "width": 460,
+   "height": 360
+  },
+  {
+   "id": "createworld-uworld-createworld",
+   "type": "file",
+   "file": "framework/UWorld/UWorld.CreateWorld.md",
+   "x": 0,
+   "y": 420,
+   "width": 460,
+   "height": 360
+  },
+  {
+   "id": "createworld-uworld-initializenewworld",
+   "type": "file",
+   "file": "framework/UWorld/UWorld.InitializeNewWorld.md",
+   "x": 0,
+   "y": 840,
+   "width": 460,
+   "height": 360
+  },
+  {
+   "id": "type-fworldinitializationvalues",
+   "type": "file",
+   "file": "framework/FWorldInitializationValues/FWorldInitializationValues.md",
+   "x": 980,
+   "y": 0,
+   "width": 460,
+   "height": 360
+  },
+  {
+   "id": "type-uworld",
+   "type": "file",
+   "file": "framework/UWorld/UWorld.md",
+   "x": 980,
+   "y": 420,
+   "width": 460,
+   "height": 360
+  },
+  {
+   "id": "type-ulevel",
+   "type": "file",
+   "file": "framework/ULevel/ULevel.md",
+   "x": 980,
+   "y": 840,
+   "width": 460,
+   "height": 360
+  },
+  {
+   "id": "type-aactor",
+   "type": "file",
+   "file": "framework/AActor/AActor.md",
+   "x": 980,
+   "y": 1260,
+   "width": 460,
+   "height": 360
+  },
+  {
+   "id": "type-uscenecomponent",
+   "type": "file",
+   "file": "framework/USceneComponent/USceneComponent.md",
+   "x": 980,
+   "y": 1680,
+   "width": 460,
+   "height": 360
+  },
+  {
+   "id": "type-uobject",
+   "type": "file",
+   "file": "framework/UObject/UObject.md",
+   "x": 1500,
+   "y": 420,
+   "width": 460,
+   "height": 360
+  },
+  {
+   "id": "type-uobjectbaseutility",
+   "type": "file",
+   "file": "framework/UObjectBaseUtility/UObjectBaseUtility.md",
+   "x": 1500,
+   "y": 840,
+   "width": 460,
+   "height": 360
+  },
+  {
+   "id": "type-uobjectbase",
+   "type": "file",
+   "file": "framework/UObjectBase/UObjectBase.md",
+   "x": 1500,
+   "y": 1260,
+   "width": 460,
+   "height": 360
+  },
+  {
+   "id": "type-eobjectflags",
+   "type": "file",
+   "file": "framework/Enum/EObjectFlags.md",
+   "x": 1500,
+   "y": 1680,
+   "width": 460,
+   "height": 360
+  },
+  {
+   "id": "type-flevelcollection",
+   "type": "file",
+   "file": "framework/FLevelCollection/FLevelCollection.md",
+   "x": 1500,
+   "y": 0,
+   "width": 460,
+   "height": 360
+  },
+  {
+   "id": "type-elevelcollectiontype",
+   "type": "file",
+   "file": "framework/Enum/ELevelCollectionType.md",
+   "x": 2020,
+   "y": 0,
+   "width": 460,
+   "height": 360
+  },
+  {
+   "id": "type-usubsystem",
+   "type": "file",
+   "file": "framework/USubsystem/USubsystem.md",
+   "x": 980,
+   "y": 2100,
+   "width": 460,
+   "height": 360
+  },
+  {
+   "id": "type-fsubsystemcollectionbase",
+   "type": "file",
+   "file": "framework/FSubsystemCollectionBase/FSubsystemCollectionBase.md",
+   "x": 1500,
+   "y": 2100,
+   "width": 460,
+   "height": 360
+  },
+  {
+   "id": "type-factorspawnparameters",
+   "type": "file",
+   "file": "framework/FActorSpawnParameters/FActorSpawnParameters.md",
+   "x": 980,
+   "y": 2520,
+   "width": 460,
+   "height": 360
+  },
+  {
+   "id": "type-espawnactorcollisionhandlingmethod",
+   "type": "file",
+   "file": "framework/Enum/ESpawnActorCollisionHandlingMethod.md",
+   "x": 1500,
+   "y": 2520,
+   "width": 460,
+   "height": 360
+  },
+  {
+   "id": "fn-uworld-initworld",
+   "type": "file",
+   "file": "framework/UWorld/UWorld.InitWorld.md",
+   "x": 0,
+   "y": 1260,
+   "width": 460,
+   "height": 360
+  },
+  {
+   "id": "fn-uworld-initializesubsystems",
+   "type": "file",
+   "file": "framework/UWorld/UWorld.InitializeSubsystems.md",
+   "x": -2080,
+   "y": 1680,
+   "width": 460,
+   "height": 360
+  },
+  {
+   "id": "fn-uworld-getworldsettings",
+   "type": "file",
+   "file": "framework/UWorld/UWorld.GetWorldSettings.md",
+   "x": -1560,
+   "y": 1680,
+   "width": 460,
+   "height": 360
+  },
+  {
+   "id": "fn-uworld-getdefaultphysicsvolume",
+   "type": "file",
+   "file": "framework/UWorld/UWorld.GetDefaultPhysicsVolume.md",
+   "x": -1040,
+   "y": 1680,
+   "width": 460,
+   "height": 360
+  },
+  {
+   "id": "fn-uworld-conditionallycreatedefaultlevelcollections",
+   "type": "file",
+   "file": "framework/UWorld/UWorld.ConditionallyCreateDefaultLevelCollections.md",
+   "x": -520,
+   "y": 1680,
+   "width": 460,
+   "height": 360
+  },
+  {
+   "id": "fn-uworld-postinitializesubsystems",
+   "type": "file",
+   "file": "framework/UWorld/UWorld.PostInitializeSubsystems.md",
+   "x": 0,
+   "y": 1680,
+   "width": 460,
+   "height": 360
+  },
+  {
+   "id": "fn-fsubsystemcollectionbase-initialize",
+   "type": "file",
+   "file": "framework/FSubsystemCollectionBase/FSubsystemCollectionBase.Initialize.md",
+   "x": -2080,
+   "y": 2100,
+   "width": 460,
+   "height": 360
+  },
+  {
+   "id": "fn-uworld-findoraddcollectionbytype-index",
+   "type": "file",
+   "file": "framework/UWorld/UWorld.FindOrAddCollectionByType_Index.md",
+   "x": -520,
+   "y": 2100,
+   "width": 460,
+   "height": 360
+  },
+  {
+   "id": "fn-fobjectsubsystemcollection-foreachsubsystem",
+   "type": "file",
+   "file": "framework/FObjectSubsystemCollection/FObjectSubsystemCollection.ForEachSubsystem.md",
+   "x": 0,
+   "y": 2100,
+   "width": 460,
+   "height": 360
+  },
+  {
+   "id": "fn-fsubsystemcollectionbase-addandinitializesubsystem",
+   "type": "file",
+   "file": "framework/FSubsystemCollectionBase/FSubsystemCollectionBase.AddAndInitializeSubsystem.md",
+   "x": -2080,
+   "y": 2520,
+   "width": 460,
+   "height": 360
+  },
+  {
+   "id": "fn-uworld-findcollectionindexbytype",
+   "type": "file",
+   "file": "framework/UWorld/UWorld.FindCollectionIndexByType.md",
+   "x": -520,
+   "y": 2520,
+   "width": 460,
+   "height": 360
+  },
+  {
+   "id": "fn-fsubsystemcollectionbase-foreachsubsystemofclass",
+   "type": "file",
+   "file": "framework/FSubsystemCollectionBase/FSubsystemCollectionBase.ForEachSubsystemOfClass.md",
+   "x": 0,
+   "y": 2520,
+   "width": 460,
+   "height": 360
+  },
+  {
+   "id": "fn-fsubsystemcollectionbase-addandinitializevalidatedsubsystem",
+   "type": "file",
+   "file": "framework/FSubsystemCollectionBase/FSubsystemCollectionBase.AddAndInitializeValidatedSubsystem.md",
+   "x": -2080,
+   "y": 2940,
+   "width": 460,
+   "height": 360
+  },
+  {
+   "id": "fn-fsubsystemcollectionbase-findandpopulatesubsystemarray",
+   "type": "file",
+   "file": "framework/FSubsystemCollectionBase/FSubsystemCollectionBase.FindAndPopulateSubsystemArray.md",
+   "x": 0,
+   "y": 2940,
+   "width": 460,
+   "height": 360
+  },
+  {
+   "id": "type-fsubsystemcollectioninitialization",
+   "type": "file",
+   "file": "framework/FSubsystemCollectionInitialization/FSubsystemCollectionInitialization.md",
+   "x": 2020,
+   "y": 2100,
+   "width": 460,
+   "height": 360
+  },
+  {
+   "id": "fn-uworld-updateworldcomponents",
+   "type": "file",
+   "file": "framework/UWorld/UWorld.UpdateWorldComponents.md",
+   "x": -2600,
+   "y": 1260,
+   "width": 460,
+   "height": 360
+  },
+  {
+   "id": "fn-uactorcomponent-registercomponentwithworld",
+   "type": "file",
+   "file": "framework/UActorComponent/UActorComponent.RegisterComponentWithWorld.md",
+   "x": -2600,
+   "y": 1680,
+   "width": 460,
+   "height": 360
+  },
+  {
+   "id": "fn-uactorcomponent-executeregisterevents",
+   "type": "file",
+   "file": "framework/UActorComponent/UActorComponent.ExecuteRegisterEvents.md",
+   "x": -2600,
+   "y": 2100,
+   "width": 460,
+   "height": 360
+  },
+  {
+   "id": "fn-uactorcomponent-onregister",
+   "type": "file",
+   "file": "framework/UActorComponent/UActorComponent.OnRegister.md",
+   "x": -2600,
+   "y": 2520,
+   "width": 460,
+   "height": 360
+  },
+  {
+   "id": "fn-uactorcomponent-activate",
+   "type": "file",
+   "file": "framework/UActorComponent/UActorComponent.Activate.md",
+   "x": -2600,
+   "y": 2940,
+   "width": 460,
+   "height": 360
+  },
+  {
+   "id": "fn-uactorcomponent-setcomponenttickenabled",
+   "type": "file",
+   "file": "framework/UActorComponent/UActorComponent.SetComponentTickEnabled.md",
+   "x": -2600,
+   "y": 3360,
+   "width": 460,
+   "height": 360
+  },
+  {
+   "id": "type-ftickfunction",
+   "type": "file",
+   "file": "framework/FTickFunction/FTickFunction.md",
+   "x": 980,
+   "y": 2940,
+   "width": 460,
+   "height": 360
+  },
+  {
+   "id": "type-etickinggroup",
+   "type": "file",
+   "file": "framework/Enum/ETickingGroup.md",
+   "x": 1500,
+   "y": 2940,
+   "width": 460,
+   "height": 360
+  },
+  {
+   "id": "type-factorcomponenttickfunction",
+   "type": "file",
+   "file": "framework/FActorComponentTickFunction/FActorComponentTickFunction.md",
+   "x": 980,
+   "y": 3360,
+   "width": 460,
+   "height": 360
+  },
+  {
+   "id": "type-factortickfunction",
+   "type": "file",
+   "file": "framework/FActorTickFunction/FActorTickFunction.md",
+   "x": 1500,
+   "y": 3360,
+   "width": 460,
+   "height": 360
+  },
+  {
+   "id": "type-fticktasklevel",
+   "type": "file",
+   "file": "framework/FTickTaskLevel/FTickTaskLevel.md",
+   "x": 980,
+   "y": 3780,
+   "width": 460,
+   "height": 360
+  },
+  {
+   "id": "type-fcoolingdowntickfunctionlist",
+   "type": "file",
+   "file": "framework/FCoolingDownTickFunctionList/FCoolingDownTickFunctionList.md",
+   "x": 1500,
+   "y": 3780,
+   "width": 460,
+   "height": 360
+  },
+  {
+   "id": "type-ftickscheduledetails",
+   "type": "file",
+   "file": "framework/FTickScheduleDetails/FTickScheduleDetails.md",
+   "x": 2020,
+   "y": 3780,
+   "width": 460,
+   "height": 360
+  },
+  {
+   "id": "type-ecomponentcreationmethod",
+   "type": "file",
+   "file": "framework/Enum/EComponentCreationMethod.md",
+   "x": 2020,
+   "y": 2940,
+   "width": 460,
+   "height": 360
+  },
+  {
+   "id": "fn-uactorcomponent-iscreatedbyconstructionscript",
+   "type": "file",
+   "file": "framework/UActorComponent/UActorComponent.IsCreatedByConstructionScript.md",
+   "x": -3640,
+   "y": 2100,
+   "width": 460,
+   "height": 360
+  },
+  {
+   "id": "fn-aactor-handleregistercomponentwithworld",
+   "type": "file",
+   "file": "framework/AActor/AActor.HandleRegisterComponentWithWorld.md",
+   "x": -3120,
+   "y": 2100,
+   "width": 460,
+   "height": 360
+  },
+  {
+   "id": "fn-uactorcomponent-registerallcomponenttickfunctions",
+   "type": "file",
+   "file": "framework/UActorComponent/UActorComponent.RegisterAllComponentTickFunctions.md",
+   "x": -3120,
+   "y": 2520,
+   "width": 460,
+   "height": 360
+  },
+  {
+   "id": "fn-uactorcomponent-registercomponenttickfunctions",
+   "type": "file",
+   "file": "framework/UActorComponent/UActorComponent.RegisterComponentTickFunctions.md",
+   "x": -3120,
+   "y": 2940,
+   "width": 460,
+   "height": 360
+  },
+  {
+   "id": "fn-uactorcomponent-setupactorcomponenttickfunction",
+   "type": "file",
+   "file": "framework/UActorComponent/UActorComponent.SetupActorComponentTickFunction.md",
+   "x": -3120,
+   "y": 3360,
+   "width": 460,
+   "height": 360
+  },
+  {
+   "id": "fn-ftickfunction-registertickfunction",
+   "type": "file",
+   "file": "framework/FTickFunction/FTickFunction.RegisterTickFunction.md",
+   "x": -3120,
+   "y": 3780,
+   "width": 460,
+   "height": 360
+  },
+  {
+   "id": "fn-ftickfunction-settickfunctionenable",
+   "type": "file",
+   "file": "framework/FTickFunction/FTickFunction.SetTickFunctionEnable.md",
+   "x": -2600,
+   "y": 3780,
+   "width": 460,
+   "height": 360
+  },
+  {
+   "id": "fn-uobjectbaseutility-istemplate",
+   "type": "file",
+   "file": "framework/UObjectBaseUtility/UObjectBaseUtility.IsTemplate.md",
+   "x": -2080,
+   "y": 3780,
+   "width": 460,
+   "height": 360
+  },
+  {
+   "id": "fn-fticktaskmanager-ticktasklevelforlevel",
+   "type": "file",
+   "file": "framework/FTickTaskManager/FTickTaskManager.TickTaskLevelForLevel.md",
+   "x": -3640,
+   "y": 4200,
+   "width": 460,
+   "height": 360
+  },
+  {
+   "id": "fn-fticktaskmanager-addtickfunction",
+   "type": "file",
+   "file": "framework/FTickTaskManager/FTickTaskManager.AddTickFunction.md",
+   "x": -3120,
+   "y": 4200,
+   "width": 460,
+   "height": 360
+  },
+  {
+   "id": "fn-fticktasklevel-removetickfunction",
+   "type": "file",
+   "file": "framework/FTickTaskLevel/FTickTaskLevel.RemoveTickFunction.md",
+   "x": -2600,
+   "y": 4200,
+   "width": 460,
+   "height": 360
+  },
+  {
+   "id": "fn-fticktasklevel-addtickfunction",
+   "type": "file",
+   "file": "framework/FTickTaskLevel/FTickTaskLevel.AddTickFunction.md",
+   "x": -2080,
+   "y": 4200,
+   "width": 460,
+   "height": 360
+  },
+  {
+   "id": "fn-ftickfunction-isticfunctionregistered",
+   "type": "file",
+   "file": "framework/FTickFunction/FTickFunction.IsTickFunctionRegistered.md",
+   "x": -1560,
+   "y": 4200,
+   "width": 460,
+   "height": 360
+  },
+  {
+   "id": "fn-fticktasklevel-hastickfunction",
+   "type": "file",
+   "file": "framework/FTickTaskLevel/FTickTaskLevel.HasTickFunction.md",
+   "x": -2080,
+   "y": 4620,
+   "width": 460,
+   "height": 360
+  },
+  {
+   "id": "fn-ulevel-updatelevelcomponents",
+   "type": "file",
+   "file": "framework/ULevel/ULevel.UpdateLevelComponents.md",
+   "x": -4160,
+   "y": 1260,
+   "width": 460,
+   "height": 360
+  },
+  {
+   "id": "fn-ulevel-incrementalupdatecomponents",
+   "type": "file",
+   "file": "framework/ULevel/ULevel.IncrementalUpdateComponents.md",
+   "x": -4160,
+   "y": 1680,
+   "width": 460,
+   "height": 360
+  },
+  {
+   "id": "fn-sortactorshierarchy",
+   "type": "file",
+   "file": "framework/SortActorsHierarchy.md",
+   "x": -4680,
+   "y": 2100,
+   "width": 460,
+   "height": 360
+  },
+  {
+   "id": "fn-ulevel-incrementalregistercomponents",
+   "type": "file",
+   "file": "framework/ULevel/ULevel.IncrementalRegisterComponents.md",
+   "x": -4160,
+   "y": 2100,
+   "width": 460,
+   "height": 360
+  },
+  {
+   "id": "fn-aactor-getattachparentactor",
+   "type": "file",
+   "file": "framework/AActor/AActor.GetAttachParentActor.md",
+   "x": -5200,
+   "y": 2520,
+   "width": 460,
+   "height": 360
+  },
+  {
+   "id": "fn-aactor-ischildactor",
+   "type": "file",
+   "file": "framework/AActor/AActor.IsChildActor.md",
+   "x": -4680,
+   "y": 2520,
+   "width": 460,
+   "height": 360
+  },
+  {
+   "id": "fn-aactor-incrementalregistercomponents",
+   "type": "file",
+   "file": "framework/AActor/AActor.IncrementalRegisterComponents.md",
+   "x": -4160,
+   "y": 2520,
+   "width": 460,
+   "height": 360
+  },
+  {
+   "id": "fn-aactor-registerallactortickfunctions",
+   "type": "file",
+   "file": "framework/AActor/AActor.RegisterAllActorTickFunctions.md",
+   "x": -4160,
+   "y": 2940,
+   "width": 460,
+   "height": 360
+  },
+  {
+   "id": "fn-aactor-registeractortickfunctions",
+   "type": "file",
+   "file": "framework/AActor/AActor.RegisterActorTickFunctions.md",
+   "x": -4160,
+   "y": 3360,
+   "width": 460,
+   "height": 360
+  },
+  {
+   "id": "type-factorthreadcontext",
+   "type": "file",
+   "file": "framework/FActorThreadContext/FActorThreadContext.md",
+   "x": 2020,
+   "y": 1260,
+   "width": 460,
+   "height": 360
+  },
+  {
+   "id": "fn-aactor-getcomponents",
+   "type": "file",
+   "file": "framework/AActor/AActor.GetComponents.md",
+   "x": -5200,
+   "y": 2940,
+   "width": 460,
+   "height": 360
+  },
+  {
+   "id": "fn-aactor-foreachcomponent-internal",
+   "type": "file",
+   "file": "framework/AActor/AActor.ForEachComponent_Internal.md",
+   "x": -5200,
+   "y": 3360,
+   "width": 460,
+   "height": 360
+  },
+  {
+   "id": "fn-getunregisteredparent",
+   "type": "file",
+   "file": "framework/GetUnregisteredParent.md",
+   "x": -5720,
+   "y": 2940,
+   "width": 460,
+   "height": 360
+  },
+  {
+   "id": "fn-uworldsubsystem-onworldcomponentsupdated",
+   "type": "file",
+   "file": "framework/UWorldSubsystem/UWorldSubsystem.OnWorldComponentsUpdated.md",
+   "x": -1560,
+   "y": 2100,
+   "width": 460,
+   "height": 360
+  },
+  {
+   "id": "fn-fobjectsubsystemcollection-getsubsystemarraycopy",
+   "type": "file",
+   "file": "framework/FObjectSubsystemCollection/FObjectSubsystemCollection.GetSubsystemArrayCopy.md",
+   "x": -1040,
+   "y": 2100,
+   "width": 460,
+   "height": 360
+  },
+  {
+   "id": "fn-fsubsystemcollectionbase-getsubsystemarraycopy",
+   "type": "file",
+   "file": "framework/FSubsystemCollectionBase/FSubsystemCollectionBase.GetSubsystemArrayCopy.md",
+   "x": -1040,
+   "y": 2520,
+   "width": 460,
+   "height": 360
+  },
+  {
+   "id": "type-fobjectsubsystemcollection",
+   "type": "file",
+   "file": "framework/FObjectSubsystemCollection/FObjectSubsystemCollection.md",
+   "x": 2540,
+   "y": 2100,
+   "width": 460,
+   "height": 360
+  }
+ ],
+ "edges": [
+  {
+   "id": "edge-uengineinit-createworld",
+   "fromNode": "createworld-uengine-init",
+   "fromSide": "bottom",
+   "toNode": "createworld-uworld-createworld",
+   "toSide": "top",
+   "label": "UWorld::CreateWorld"
+  },
+  {
+   "id": "edge-type-uworld-fworldinit",
+   "fromNode": "type-uworld",
+   "fromSide": "top",
+   "toNode": "type-fworldinitializationvalues",
+   "toSide": "bottom",
+   "label": "InitializationValues"
+  },
+  {
+   "id": "edge-type-uworld-ulevel",
+   "fromNode": "type-uworld",
+   "fromSide": "bottom",
+   "toNode": "type-ulevel",
+   "toSide": "top",
+   "label": "PersistentLevel"
+  },
+  {
+   "id": "edge-type-ulevel-aactor",
+   "fromNode": "type-ulevel",
+   "fromSide": "bottom",
+   "toNode": "type-aactor",
+   "toSide": "top",
+   "label": "Actors"
+  },
+  {
+   "id": "edge-type-aactor-uscenecomponent",
+   "fromNode": "type-aactor",
+   "fromSide": "bottom",
+   "toNode": "type-uscenecomponent",
+   "toSide": "top",
+   "label": "RootComponent"
+  },
+  {
+   "id": "edge-type-uworld-uobject",
+   "fromNode": "type-uworld",
+   "fromSide": "right",
+   "toNode": "type-uobject",
+   "toSide": "left",
+   "label": "inherits"
+  },
+  {
+   "id": "edge-type-ulevel-uobject",
+   "fromNode": "type-ulevel",
+   "fromSide": "right",
+   "toNode": "type-uobject",
+   "toSide": "left",
+   "label": "inherits"
+  },
+  {
+   "id": "edge-type-aactor-uobject",
+   "fromNode": "type-aactor",
+   "fromSide": "right",
+   "toNode": "type-uobject",
+   "toSide": "left",
+   "label": "inherits"
+  },
+  {
+   "id": "edge-type-uobject-uobjectbaseutility",
+   "fromNode": "type-uobject",
+   "fromSide": "bottom",
+   "toNode": "type-uobjectbaseutility",
+   "toSide": "top",
+   "label": "inherits"
+  },
+  {
+   "id": "edge-type-uobjectbaseutility-uobjectbase",
+   "fromNode": "type-uobjectbaseutility",
+   "fromSide": "bottom",
+   "toNode": "type-uobjectbase",
+   "toSide": "top",
+   "label": "inherits"
+  },
+  {
+   "id": "edge-type-uobjectbase-eobjectflags",
+   "fromNode": "type-uobjectbase",
+   "fromSide": "bottom",
+   "toNode": "type-eobjectflags",
+   "toSide": "top",
+   "label": "ObjectFlags"
+  },
+  {
+   "id": "edge-createworld-initializenewworld",
+   "fromNode": "createworld-uworld-createworld",
+   "fromSide": "bottom",
+   "toNode": "createworld-uworld-initializenewworld",
+   "toSide": "top",
+   "label": "InitializeNewWorld"
+  },
+  {
+   "id": "edge-type-uworld-flevelcollection",
+   "fromNode": "type-uworld",
+   "fromSide": "top",
+   "toNode": "type-flevelcollection",
+   "toSide": "bottom",
+   "label": "LevelCollections"
+  },
+  {
+   "id": "edge-type-flevelcollection-ulevel",
+   "fromNode": "type-flevelcollection",
+   "fromSide": "bottom",
+   "toNode": "type-ulevel",
+   "toSide": "top",
+   "label": "PersistentLevel/Levels"
+  },
+  {
+   "id": "edge-type-flevelcollection-elevelcollectiontype",
+   "fromNode": "type-flevelcollection",
+   "fromSide": "right",
+   "toNode": "type-elevelcollectiontype",
+   "toSide": "left",
+   "label": "CollectionType"
+  },
+  {
+   "id": "edge-type-fsubsystemcollectionbase-usubsystem",
+   "fromNode": "type-fsubsystemcollectionbase",
+   "fromSide": "left",
+   "toNode": "type-usubsystem",
+   "toSide": "right",
+   "label": "SubsystemMap"
+  },
+  {
+   "id": "edge-type-factorspawnparameters-espawncollisionhandling",
+   "fromNode": "type-factorspawnparameters",
+   "fromSide": "right",
+   "toNode": "type-espawnactorcollisionhandlingmethod",
+   "toSide": "left",
+   "label": "SpawnCollisionHandlingOverride"
+  },
+  {
+   "id": "edge-initializenewworld-initworld",
+   "fromNode": "createworld-uworld-initializenewworld",
+   "fromSide": "bottom",
+   "toNode": "fn-uworld-initworld",
+   "toSide": "top",
+   "label": "InitWorld"
+  },
+  {
+   "id": "edge-initworld-initializesubsystems",
+   "fromNode": "fn-uworld-initworld",
+   "fromSide": "bottom",
+   "toNode": "fn-uworld-initializesubsystems",
+   "toSide": "top",
+   "label": "InitializeSubsystems"
+  },
+  {
+   "id": "edge-initworld-getworldsettings",
+   "fromNode": "fn-uworld-initworld",
+   "fromSide": "bottom",
+   "toNode": "fn-uworld-getworldsettings",
+   "toSide": "top",
+   "label": "GetWorldSettings"
+  },
+  {
+   "id": "edge-initworld-getdefaultphysicsvolume",
+   "fromNode": "fn-uworld-initworld",
+   "fromSide": "bottom",
+   "toNode": "fn-uworld-getdefaultphysicsvolume",
+   "toSide": "top",
+   "label": "GetDefaultPhysicsVolume"
+  },
+  {
+   "id": "edge-initworld-conditionallycreatedefaultlevelcollections",
+   "fromNode": "fn-uworld-initworld",
+   "fromSide": "bottom",
+   "toNode": "fn-uworld-conditionallycreatedefaultlevelcollections",
+   "toSide": "top",
+   "label": "ConditionallyCreateDefaultLevelCollections"
+  },
+  {
+   "id": "edge-initworld-postinitializesubsystems",
+   "fromNode": "fn-uworld-initworld",
+   "fromSide": "bottom",
+   "toNode": "fn-uworld-postinitializesubsystems",
+   "toSide": "top",
+   "label": "PostInitializeSubsystems"
+  },
+  {
+   "id": "edge-initializesubsystems-fsubsystemcollectionbaseinitialize",
+   "fromNode": "fn-uworld-initializesubsystems",
+   "fromSide": "bottom",
+   "toNode": "fn-fsubsystemcollectionbase-initialize",
+   "toSide": "top",
+   "label": "SubsystemCollection.Initialize"
+  },
+  {
+   "id": "edge-ccdlc-findoraddcollectionbytype-index",
+   "fromNode": "fn-uworld-conditionallycreatedefaultlevelcollections",
+   "fromSide": "bottom",
+   "toNode": "fn-uworld-findoraddcollectionbytype-index",
+   "toSide": "top",
+   "label": "FindOrAddCollectionByType_Index"
+  },
+  {
+   "id": "edge-ccdlc-findcollectionindexbytype",
+   "fromNode": "fn-uworld-conditionallycreatedefaultlevelcollections",
+   "fromSide": "right",
+   "toNode": "fn-uworld-findcollectionindexbytype",
+   "toSide": "left",
+   "label": "FindCollectionByType"
+  },
+  {
+   "id": "edge-postinitializesubsystems-foreachsubsystem",
+   "fromNode": "fn-uworld-postinitializesubsystems",
+   "fromSide": "bottom",
+   "toNode": "fn-fobjectsubsystemcollection-foreachsubsystem",
+   "toSide": "top",
+   "label": "ForEachSubsystem"
+  },
+  {
+   "id": "edge-fsubsystemcollectionbaseinitialize-addandinitializesubsystem",
+   "fromNode": "fn-fsubsystemcollectionbase-initialize",
+   "fromSide": "bottom",
+   "toNode": "fn-fsubsystemcollectionbase-addandinitializesubsystem",
+   "toSide": "top",
+   "label": "AddAndInitializeSubsystem"
+  },
+  {
+   "id": "edge-findoraddcollectionbytype-index-findcollectionindexbytype",
+   "fromNode": "fn-uworld-findoraddcollectionbytype-index",
+   "fromSide": "bottom",
+   "toNode": "fn-uworld-findcollectionindexbytype",
+   "toSide": "top",
+   "label": "FindCollectionIndexByType"
+  },
+  {
+   "id": "edge-foreachsubsystem-foreachsubsystemofclass",
+   "fromNode": "fn-fobjectsubsystemcollection-foreachsubsystem",
+   "fromSide": "bottom",
+   "toNode": "fn-fsubsystemcollectionbase-foreachsubsystemofclass",
+   "toSide": "top",
+   "label": "ForEachSubsystemOfClass"
+  },
+  {
+   "id": "edge-addandinitializesubsystem-addandinitializevalidatedsubsystem",
+   "fromNode": "fn-fsubsystemcollectionbase-addandinitializesubsystem",
+   "fromSide": "bottom",
+   "toNode": "fn-fsubsystemcollectionbase-addandinitializevalidatedsubsystem",
+   "toSide": "top",
+   "label": "AddAndInitializeValidatedSubsystem"
+  },
+  {
+   "id": "edge-foreachsubsystemofclass-findandpopulatesubsystemarray",
+   "fromNode": "fn-fsubsystemcollectionbase-foreachsubsystemofclass",
+   "fromSide": "bottom",
+   "toNode": "fn-fsubsystemcollectionbase-findandpopulatesubsystemarray",
+   "toSide": "top",
+   "label": "FindAndPopulateSubsystemArray"
+  },
+  {
+   "id": "edge-type-fsubsystemcollectionbase-fsubsystemcollectioninitialization",
+   "fromNode": "type-fsubsystemcollectionbase",
+   "fromSide": "right",
+   "toNode": "type-fsubsystemcollectioninitialization",
+   "toSide": "left",
+   "label": "FSubsystemCollectionInitialization"
+  },
+  {
+   "id": "edge-initializenewworld-updateworldcomponents",
+   "fromNode": "createworld-uworld-initializenewworld",
+   "fromSide": "left",
+   "toNode": "fn-uworld-updateworldcomponents",
+   "toSide": "top",
+   "label": "UpdateWorldComponents"
+  },
+  {
+   "id": "edge-updateworldcomponents-registercomponentwithworld",
+   "fromNode": "fn-uworld-updateworldcomponents",
+   "fromSide": "bottom",
+   "toNode": "fn-uactorcomponent-registercomponentwithworld",
+   "toSide": "top",
+   "label": "LineBatcher->RegisterComponentWithWorld"
+  },
+  {
+   "id": "edge-registercomponentwithworld-executeregisterevents",
+   "fromNode": "fn-uactorcomponent-registercomponentwithworld",
+   "fromSide": "bottom",
+   "toNode": "fn-uactorcomponent-executeregisterevents",
+   "toSide": "top",
+   "label": "ExecuteRegisterEvents"
+  },
+  {
+   "id": "edge-executeregisterevents-onregister",
+   "fromNode": "fn-uactorcomponent-executeregisterevents",
+   "fromSide": "bottom",
+   "toNode": "fn-uactorcomponent-onregister",
+   "toSide": "top",
+   "label": "OnRegister"
+  },
+  {
+   "id": "edge-onregister-activate",
+   "fromNode": "fn-uactorcomponent-onregister",
+   "fromSide": "bottom",
+   "toNode": "fn-uactorcomponent-activate",
+   "toSide": "top",
+   "label": "Activate"
+  },
+  {
+   "id": "edge-activate-setcomponenttickenabled",
+   "fromNode": "fn-uactorcomponent-activate",
+   "fromSide": "bottom",
+   "toNode": "fn-uactorcomponent-setcomponenttickenabled",
+   "toSide": "top",
+   "label": "SetComponentTickEnabled"
+  },
+  {
+   "id": "edge-type-ftickfunction-etickinggroup",
+   "fromNode": "type-ftickfunction",
+   "fromSide": "right",
+   "toNode": "type-etickinggroup",
+   "toSide": "left",
+   "label": "TickGroup"
+  },
+  {
+   "id": "edge-type-factorcomponenttickfunction-ftickfunction",
+   "fromNode": "type-factorcomponenttickfunction",
+   "fromSide": "top",
+   "toNode": "type-ftickfunction",
+   "toSide": "bottom",
+   "label": "inherits"
+  },
+  {
+   "id": "edge-type-factortickfunction-ftickfunction",
+   "fromNode": "type-factortickfunction",
+   "fromSide": "top",
+   "toNode": "type-ftickfunction",
+   "toSide": "bottom",
+   "label": "inherits"
+  },
+  {
+   "id": "edge-type-factortickfunction-aactor",
+   "fromNode": "type-factortickfunction",
+   "fromSide": "right",
+   "toNode": "type-aactor",
+   "toSide": "right",
+   "label": "Target"
+  },
+  {
+   "id": "edge-type-fticktasklevel-ftickfunction",
+   "fromNode": "type-fticktasklevel",
+   "fromSide": "left",
+   "toNode": "type-ftickfunction",
+   "toSide": "left",
+   "label": "AllEnabled/DisabledTickFunctions"
+  },
+  {
+   "id": "edge-type-fticktasklevel-fcoolingdowntickfunctionlist",
+   "fromNode": "type-fticktasklevel",
+   "fromSide": "right",
+   "toNode": "type-fcoolingdowntickfunctionlist",
+   "toSide": "left",
+   "label": "AllCoolingDownTickFunctions"
+  },
+  {
+   "id": "edge-type-fticktasklevel-ftickscheduledetails",
+   "fromNode": "type-fticktasklevel",
+   "fromSide": "bottom",
+   "toNode": "type-ftickscheduledetails",
+   "toSide": "bottom",
+   "label": "TickFunctionsToReschedule"
+  },
+  {
+   "id": "edge-type-fcoolingdowntickfunctionlist-ftickfunction",
+   "fromNode": "type-fcoolingdowntickfunctionlist",
+   "fromSide": "top",
+   "toNode": "type-ftickfunction",
+   "toSide": "bottom",
+   "label": "Head"
+  },
+  {
+   "id": "edge-type-ulevel-fticktasklevel",
+   "fromNode": "type-ulevel",
+   "fromSide": "left",
+   "toNode": "type-fticktasklevel",
+   "toSide": "top",
+   "label": "TickTaskLevel"
+  },
+  {
+   "id": "edge-registercomponentwithworld-handleregistercomponentwithworld",
+   "fromNode": "fn-uactorcomponent-registercomponentwithworld",
+   "fromSide": "left",
+   "toNode": "fn-aactor-handleregistercomponentwithworld",
+   "toSide": "top",
+   "label": "MyOwner->HandleRegisterComponentWithWorld"
+  },
+  {
+   "id": "edge-registercomponentwithworld-iscreatedbyconstructionscript",
+   "fromNode": "fn-uactorcomponent-registercomponentwithworld",
+   "fromSide": "left",
+   "toNode": "fn-uactorcomponent-iscreatedbyconstructionscript",
+   "toSide": "top",
+   "label": "IsCreatedByConstructionScript"
+  },
+  {
+   "id": "edge-handleregistercomponentwithworld-registerallcomponenttickfunctions",
+   "fromNode": "fn-aactor-handleregistercomponentwithworld",
+   "fromSide": "bottom",
+   "toNode": "fn-uactorcomponent-registerallcomponenttickfunctions",
+   "toSide": "top",
+   "label": "RegisterAllComponentTickFunctions"
+  },
+  {
+   "id": "edge-registerallcomponenttickfunctions-registercomponenttickfunctions",
+   "fromNode": "fn-uactorcomponent-registerallcomponenttickfunctions",
+   "fromSide": "bottom",
+   "toNode": "fn-uactorcomponent-registercomponenttickfunctions",
+   "toSide": "top",
+   "label": "RegisterComponentTickFunctions"
+  },
+  {
+   "id": "edge-registercomponenttickfunctions-setupactorcomponenttickfunction",
+   "fromNode": "fn-uactorcomponent-registercomponenttickfunctions",
+   "fromSide": "bottom",
+   "toNode": "fn-uactorcomponent-setupactorcomponenttickfunction",
+   "toSide": "top",
+   "label": "SetupActorComponentTickFunction"
+  },
+  {
+   "id": "edge-setupactorcomponenttickfunction-registertickfunction",
+   "fromNode": "fn-uactorcomponent-setupactorcomponenttickfunction",
+   "fromSide": "bottom",
+   "toNode": "fn-ftickfunction-registertickfunction",
+   "toSide": "top",
+   "label": "RegisterTickFunction"
+  },
+  {
+   "id": "edge-setupactorcomponenttickfunction-settickfunctionenable",
+   "fromNode": "fn-uactorcomponent-setupactorcomponenttickfunction",
+   "fromSide": "bottom",
+   "toNode": "fn-ftickfunction-settickfunctionenable",
+   "toSide": "top",
+   "label": "SetTickFunctionEnable"
+  },
+  {
+   "id": "edge-setupactorcomponenttickfunction-istemplate",
+   "fromNode": "fn-uactorcomponent-setupactorcomponenttickfunction",
+   "fromSide": "right",
+   "toNode": "fn-uobjectbaseutility-istemplate",
+   "toSide": "top",
+   "label": "IsTemplate"
+  },
+  {
+   "id": "edge-setcomponenttickenabled-settickfunctionenable",
+   "fromNode": "fn-uactorcomponent-setcomponenttickenabled",
+   "fromSide": "bottom",
+   "toNode": "fn-ftickfunction-settickfunctionenable",
+   "toSide": "top",
+   "label": "PrimaryComponentTick.SetTickFunctionEnable"
+  },
+  {
+   "id": "edge-setcomponenttickenabled-istemplate",
+   "fromNode": "fn-uactorcomponent-setcomponenttickenabled",
+   "fromSide": "right",
+   "toNode": "fn-uobjectbaseutility-istemplate",
+   "toSide": "top",
+   "label": "IsTemplate"
+  },
+  {
+   "id": "edge-settickfunctionenable-isticfunctionregistered",
+   "fromNode": "fn-ftickfunction-settickfunctionenable",
+   "fromSide": "right",
+   "toNode": "fn-ftickfunction-isticfunctionregistered",
+   "toSide": "top",
+   "label": "IsTickFunctionRegistered"
+  },
+  {
+   "id": "edge-settickfunctionenable-removetickfunction",
+   "fromNode": "fn-ftickfunction-settickfunctionenable",
+   "fromSide": "bottom",
+   "toNode": "fn-fticktasklevel-removetickfunction",
+   "toSide": "top",
+   "label": "TickTaskLevel->RemoveTickFunction"
+  },
+  {
+   "id": "edge-settickfunctionenable-addtickfunction",
+   "fromNode": "fn-ftickfunction-settickfunctionenable",
+   "fromSide": "bottom",
+   "toNode": "fn-fticktasklevel-addtickfunction",
+   "toSide": "top",
+   "label": "TickTaskLevel->AddTickFunction"
+  },
+  {
+   "id": "edge-registertickfunction-isticfunctionregistered",
+   "fromNode": "fn-ftickfunction-registertickfunction",
+   "fromSide": "top",
+   "toNode": "fn-ftickfunction-isticfunctionregistered",
+   "toSide": "top",
+   "label": "IsTickFunctionRegistered"
+  },
+  {
+   "id": "edge-registertickfunction-fticktaskmanager-addtickfunction",
+   "fromNode": "fn-ftickfunction-registertickfunction",
+   "fromSide": "bottom",
+   "toNode": "fn-fticktaskmanager-addtickfunction",
+   "toSide": "top",
+   "label": "FTickTaskManager::AddTickFunction"
+  },
+  {
+   "id": "edge-fticktaskmanager-addtickfunction-ticktasklevelforlevel",
+   "fromNode": "fn-fticktaskmanager-addtickfunction",
+   "fromSide": "left",
+   "toNode": "fn-fticktaskmanager-ticktasklevelforlevel",
+   "toSide": "right",
+   "label": "TickTaskLevelForLevel"
+  },
+  {
+   "id": "edge-fticktaskmanager-addtickfunction-fticktasklevel-addtickfunction",
+   "fromNode": "fn-fticktaskmanager-addtickfunction",
+   "fromSide": "bottom",
+   "toNode": "fn-fticktasklevel-addtickfunction",
+   "toSide": "bottom",
+   "label": "Level->AddTickFunction"
+  },
+  {
+   "id": "edge-fticktasklevel-addtickfunction-hastickfunction",
+   "fromNode": "fn-fticktasklevel-addtickfunction",
+   "fromSide": "bottom",
+   "toNode": "fn-fticktasklevel-hastickfunction",
+   "toSide": "top",
+   "label": "HasTickFunction"
+  },
+  {
+   "id": "edge-updateworldcomponents-updatelevelcomponents",
+   "fromNode": "fn-uworld-updateworldcomponents",
+   "fromSide": "left",
+   "toNode": "fn-ulevel-updatelevelcomponents",
+   "toSide": "right",
+   "label": "Level->UpdateLevelComponents"
+  },
+  {
+   "id": "edge-updatelevelcomponents-incrementalupdatecomponents",
+   "fromNode": "fn-ulevel-updatelevelcomponents",
+   "fromSide": "bottom",
+   "toNode": "fn-ulevel-incrementalupdatecomponents",
+   "toSide": "top",
+   "label": "IncrementalUpdateComponents"
+  },
+  {
+   "id": "edge-incrementalupdatecomponents-sortactorshierarchy",
+   "fromNode": "fn-ulevel-incrementalupdatecomponents",
+   "fromSide": "bottom",
+   "toNode": "fn-sortactorshierarchy",
+   "toSide": "top",
+   "label": "SortActorsHierarchy"
+  },
+  {
+   "id": "edge-incrementalupdatecomponents-ulevel-incrementalregistercomponents",
+   "fromNode": "fn-ulevel-incrementalupdatecomponents",
+   "fromSide": "bottom",
+   "toNode": "fn-ulevel-incrementalregistercomponents",
+   "toSide": "top",
+   "label": "IncrementalRegisterComponents"
+  },
+  {
+   "id": "edge-sortactorshierarchy-getattachparentactor",
+   "fromNode": "fn-sortactorshierarchy",
+   "fromSide": "bottom",
+   "toNode": "fn-aactor-getattachparentactor",
+   "toSide": "top",
+   "label": "GetAttachParentActor"
+  },
+  {
+   "id": "edge-sortactorshierarchy-ischildactor",
+   "fromNode": "fn-sortactorshierarchy",
+   "fromSide": "bottom",
+   "toNode": "fn-aactor-ischildactor",
+   "toSide": "top",
+   "label": "IsChildActor"
+  },
+  {
+   "id": "edge-ulevel-incrementalregistercomponents-aactor-incrementalregistercomponents",
+   "fromNode": "fn-ulevel-incrementalregistercomponents",
+   "fromSide": "bottom",
+   "toNode": "fn-aactor-incrementalregistercomponents",
+   "toSide": "top",
+   "label": "Actor->IncrementalRegisterComponents"
+  },
+  {
+   "id": "edge-aactor-incrementalregistercomponents-registerallactortickfunctions",
+   "fromNode": "fn-aactor-incrementalregistercomponents",
+   "fromSide": "bottom",
+   "toNode": "fn-aactor-registerallactortickfunctions",
+   "toSide": "top",
+   "label": "RegisterAllActorTickFunctions"
+  },
+  {
+   "id": "edge-aactor-incrementalregistercomponents-registercomponentwithworld",
+   "fromNode": "fn-aactor-incrementalregistercomponents",
+   "fromSide": "right",
+   "toNode": "fn-uactorcomponent-registercomponentwithworld",
+   "toSide": "left",
+   "label": "Component->RegisterComponentWithWorld"
+  },
+  {
+   "id": "edge-registerallactortickfunctions-registeractortickfunctions",
+   "fromNode": "fn-aactor-registerallactortickfunctions",
+   "fromSide": "bottom",
+   "toNode": "fn-aactor-registeractortickfunctions",
+   "toSide": "top",
+   "label": "RegisterActorTickFunctions"
+  },
+  {
+   "id": "edge-registerallactortickfunctions-registerallcomponenttickfunctions",
+   "fromNode": "fn-aactor-registerallactortickfunctions",
+   "fromSide": "right",
+   "toNode": "fn-uactorcomponent-registerallcomponenttickfunctions",
+   "toSide": "left",
+   "label": "Component->RegisterAllComponentTickFunctions"
+  },
+  {
+   "id": "edge-registerallactortickfunctions-istemplate",
+   "fromNode": "fn-aactor-registerallactortickfunctions",
+   "fromSide": "bottom",
+   "toNode": "fn-uobjectbaseutility-istemplate",
+   "toSide": "left",
+   "label": "IsTemplate"
+  },
+  {
+   "id": "edge-registeractortickfunctions-settickfunctionenable",
+   "fromNode": "fn-aactor-registeractortickfunctions",
+   "fromSide": "right",
+   "toNode": "fn-ftickfunction-settickfunctionenable",
+   "toSide": "left",
+   "label": "PrimaryActorTick.SetTickFunctionEnable"
+  },
+  {
+   "id": "edge-registeractortickfunctions-registertickfunction",
+   "fromNode": "fn-aactor-registeractortickfunctions",
+   "fromSide": "bottom",
+   "toNode": "fn-ftickfunction-registertickfunction",
+   "toSide": "left",
+   "label": "PrimaryActorTick.RegisterTickFunction"
+  },
+  {
+   "id": "edge-registeractortickfunctions-isticfunctionregistered",
+   "fromNode": "fn-aactor-registeractortickfunctions",
+   "fromSide": "bottom",
+   "toNode": "fn-ftickfunction-isticfunctionregistered",
+   "toSide": "left",
+   "label": "IsTickFunctionRegistered"
+  },
+  {
+   "id": "edge-type-factorthreadcontext-aactor",
+   "fromNode": "type-factorthreadcontext",
+   "fromSide": "top",
+   "toNode": "type-aactor",
+   "toSide": "top",
+   "label": "TestRegisterTickFunctions"
+  },
+  {
+   "id": "edge-incrementalregistercomponents-getcomponents",
+   "fromNode": "fn-aactor-incrementalregistercomponents",
+   "fromSide": "left",
+   "toNode": "fn-aactor-getcomponents",
+   "toSide": "top",
+   "label": "GetComponents"
+  },
+  {
+   "id": "edge-getcomponents-foreachcomponent-internal",
+   "fromNode": "fn-aactor-getcomponents",
+   "fromSide": "bottom",
+   "toNode": "fn-aactor-foreachcomponent-internal",
+   "toSide": "top",
+   "label": "ForEachComponent_Internal"
+  },
+  {
+   "id": "edge-incrementalregistercomponents-getunregisteredparent",
+   "fromNode": "fn-aactor-incrementalregistercomponents",
+   "fromSide": "left",
+   "toNode": "fn-getunregisteredparent",
+   "toSide": "top",
+   "label": "GetUnregisteredParent"
+  },
+  {
+   "id": "edge-updateworldcomponents-getsubsystemarraycopy",
+   "fromNode": "fn-uworld-updateworldcomponents",
+   "fromSide": "bottom",
+   "toNode": "fn-fobjectsubsystemcollection-getsubsystemarraycopy",
+   "toSide": "top",
+   "label": "GetSubsystemArray"
+  },
+  {
+   "id": "edge-objectcollection-basecollection-getsubsystemarraycopy",
+   "fromNode": "fn-fobjectsubsystemcollection-getsubsystemarraycopy",
+   "fromSide": "bottom",
+   "toNode": "fn-fsubsystemcollectionbase-getsubsystemarraycopy",
+   "toSide": "top",
+   "label": "FSubsystemCollectionBase::GetSubsystemArrayCopy"
+  },
+  {
+   "id": "edge-getsubsystemarraycopy-findandpopulatesubsystemarray",
+   "fromNode": "fn-fsubsystemcollectionbase-getsubsystemarraycopy",
+   "fromSide": "bottom",
+   "toNode": "fn-fsubsystemcollectionbase-findandpopulatesubsystemarray",
+   "toSide": "top",
+   "label": "FindAndPopulateSubsystemArray"
+  },
+  {
+   "id": "edge-updateworldcomponents-onworldcomponentsupdated",
+   "fromNode": "fn-uworld-updateworldcomponents",
+   "fromSide": "bottom",
+   "toNode": "fn-uworldsubsystem-onworldcomponentsupdated",
+   "toSide": "top",
+   "label": "OnWorldComponentsUpdated"
+  },
+  {
+   "id": "edge-type-fsubsystemcollectionbase-fobjectsubsystemcollection",
+   "fromNode": "type-fsubsystemcollectionbase",
+   "fromSide": "right",
+   "toNode": "type-fobjectsubsystemcollection",
+   "toSide": "left",
+   "label": "derives"
+  }
+ ]
 }

@@ -5,6 +5,8 @@ related:
   - "[[ULevel/ULevel.IncrementalRegisterComponents|ULevel::IncrementalRegisterComponents]]"
   - "[[AActor/AActor.RegisterAllActorTickFunctions|AActor::RegisterAllActorTickFunctions]]"
   - "[[UActorComponent/UActorComponent.RegisterComponentWithWorld|UActorComponent::RegisterComponentWithWorld]]"
+  - "[[AActor/AActor.GetComponents|AActor::GetComponents]]"
+  - "[[GetUnregisteredParent|GetUnregisteredParent]]"
 tags:
   - Actor_cpp
 ---

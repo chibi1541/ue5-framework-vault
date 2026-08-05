@@ -3,6 +3,7 @@ related:
   - "[[USubsystem/USubsystem|USubsystem]]"
   - "[[FSubsystemCollectionBase/FSubsystemCollectionBase.ForEachSubsystemOfClass|FSubsystemCollectionBase::ForEachSubsystemOfClass]]"
   - "[[UWorld/UWorld.PostInitializeSubsystems|UWorld::PostInitializeSubsystems]]"
+  - "[[FObjectSubsystemCollection/FObjectSubsystemCollection|FObjectSubsystemCollection]]"
 tags:
   - SubsystemCollection_h
 ---

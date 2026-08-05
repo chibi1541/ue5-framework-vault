@@ -2,6 +2,7 @@
 related:
   - "[[FSubsystemCollectionBase/FSubsystemCollectionBase|FSubsystemCollectionBase]]"
   - "[[FSubsystemCollectionBase/FSubsystemCollectionBase.ForEachSubsystemOfClass|FSubsystemCollectionBase::ForEachSubsystemOfClass]]"
+  - "[[FSubsystemCollectionBase/FSubsystemCollectionBase.GetSubsystemArrayCopy|FSubsystemCollectionBase::GetSubsystemArrayCopy]]"
 tags:
   - SubsystemCollection_cpp
 ---
