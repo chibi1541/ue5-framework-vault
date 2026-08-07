@@ -18,6 +18,10 @@ related:
   - "[[UActorComponent/UActorComponent.RegisterComponentWithWorld|UActorComponent::RegisterComponentWithWorld]]"
   - "[[FObjectSubsystemCollection/FObjectSubsystemCollection|FObjectSubsystemCollection]]"
   - "[[UWorldSubsystem/UWorldSubsystem.OnWorldComponentsUpdated|UWorldSubsystem::OnWorldComponentsUpdated]]"
+  - "[[UWorld/UWorld.Tick|UWorld::Tick]]"
+  - "[[UWorld/UWorld.SetActiveLevelCollection|UWorld::SetActiveLevelCollection]]"
+  - "[[UWorld/UWorld.GetActiveLevelCollection|UWorld::GetActiveLevelCollection]]"
+  - "[[FScopedLevelCollectionContextSwitch/FScopedLevelCollectionContextSwitch|FScopedLevelCollectionContextSwitch]]"
 tags:
   - World_h
 ---

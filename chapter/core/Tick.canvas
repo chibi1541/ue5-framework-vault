@@ -1,0 +1,17 @@
+{
+	"nodes":[
+		{"id":"fn-uworld-tick","type":"file","file":"framework/UWorld/UWorld.Tick.md","x":0,"y":0,"width":460,"height":360},
+		{"id":"fn-uworld-setactivelevelcollection","type":"file","file":"framework/UWorld/UWorld.SetActiveLevelCollection.md","x":-520,"y":420,"width":460,"height":360},
+		{"id":"fn-uworld-getactivelevelcollection","type":"file","file":"framework/UWorld/UWorld.GetActiveLevelCollection.md","x":-520,"y":840,"width":460,"height":360},
+		{"id":"fn-fticktaskmanager-endframe","type":"file","file":"framework/FTickTaskManager/FTickTaskManager.EndFrame.md","x":0,"y":420,"width":460,"height":360},
+		{"id":"fn-fticktasklevel-endframe","type":"file","file":"framework/FTickTaskLevel/FTickTaskLevel.EndFrame.md","x":0,"y":840,"width":460,"height":360},
+		{"id":"type-fscopedlevelcollectioncontextswitch","type":"file","file":"framework/FScopedLevelCollectionContextSwitch/FScopedLevelCollectionContextSwitch.md","x":980,"y":0,"width":460,"height":360},
+		{"id":"type-eleveltick","type":"file","file":"framework/Enum/ELevelTick.md","x":1500,"y":0,"width":460,"height":360}
+	],
+	"edges":[
+		{"id":"edge-uworld-tick-setactivelevelcollection","fromNode":"fn-uworld-tick","fromSide":"left","toNode":"fn-uworld-setactivelevelcollection","toSide":"top","label":"FScopedLevelCollectionContextSwitch"},
+		{"id":"edge-setactivelevelcollection-getactivelevelcollection","fromNode":"fn-uworld-setactivelevelcollection","fromSide":"bottom","toNode":"fn-uworld-getactivelevelcollection","toSide":"top","label":"GetActiveLevelCollection"},
+		{"id":"edge-uworld-tick-fticktaskmanager-endframe","fromNode":"fn-uworld-tick","fromSide":"bottom","toNode":"fn-fticktaskmanager-endframe","toSide":"top","label":"FTickTaskManagerInterface::Get().EndFrame"},
+		{"id":"edge-fticktaskmanager-endframe-fticktasklevel-endframe","fromNode":"fn-fticktaskmanager-endframe","fromSide":"bottom","toNode":"fn-fticktasklevel-endframe","toSide":"top","label":"LevelList[i]->EndFrame"}
+	]
+}

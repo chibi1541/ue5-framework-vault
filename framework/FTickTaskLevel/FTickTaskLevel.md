@@ -11,6 +11,8 @@ related:
   - "[[FTickFunction/FTickFunction.SetTickFunctionEnable|FTickFunction::SetTickFunctionEnable]]"
   - "[[FTickTaskManager/FTickTaskManager.AddTickFunction|FTickTaskManager::AddTickFunction]]"
   - "[[FTickTaskManager/FTickTaskManager.TickTaskLevelForLevel|FTickTaskManager::TickTaskLevelForLevel]]"
+  - "[[FTickTaskLevel/FTickTaskLevel.EndFrame|FTickTaskLevel::EndFrame]]"
+  - "[[FTickTaskManager/FTickTaskManager.EndFrame|FTickTaskManager::EndFrame]]"
 tags:
   - TickTaskManager_cpp
 ---

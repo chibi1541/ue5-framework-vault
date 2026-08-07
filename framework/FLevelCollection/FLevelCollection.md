@@ -6,6 +6,10 @@ related:
   - "[[UWorld/UWorld.ConditionallyCreateDefaultLevelCollections|UWorld::ConditionallyCreateDefaultLevelCollections]]"
   - "[[UWorld/UWorld.FindOrAddCollectionByType_Index|UWorld::FindOrAddCollectionByType_Index]]"
   - "[[UWorld/UWorld.FindCollectionIndexByType|UWorld::FindCollectionIndexByType]]"
+  - "[[UWorld/UWorld.Tick|UWorld::Tick]]"
+  - "[[UWorld/UWorld.SetActiveLevelCollection|UWorld::SetActiveLevelCollection]]"
+  - "[[UWorld/UWorld.GetActiveLevelCollection|UWorld::GetActiveLevelCollection]]"
+  - "[[FScopedLevelCollectionContextSwitch/FScopedLevelCollectionContextSwitch|FScopedLevelCollectionContextSwitch]]"
 tags:
   - World_h
 ---
