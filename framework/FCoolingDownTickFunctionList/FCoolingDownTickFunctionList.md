@@ -5,6 +5,7 @@ related:
   - "[[FTickTaskLevel/FTickTaskLevel.RemoveTickFunction|FTickTaskLevel::RemoveTickFunction]]"
   - "[[FTickTaskLevel/FTickTaskLevel.HasTickFunction|FTickTaskLevel::HasTickFunction]]"
   - "[[FTickTaskLevel/FTickTaskLevel.EndFrame|FTickTaskLevel::EndFrame]]"
+  - "[[FTickFunction/FTickFunction.FInternalData|FTickFunction::FInternalData]]"
 tags:
   - TickTaskManager_cpp
 ---

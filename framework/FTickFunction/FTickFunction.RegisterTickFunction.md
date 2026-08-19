@@ -6,6 +6,7 @@ related:
   - "[[UActorComponent/UActorComponent.SetupActorComponentTickFunction|UActorComponent::SetupActorComponentTickFunction]]"
   - "[[ULevel/ULevel|ULevel]]"
   - "[[AActor/AActor.RegisterActorTickFunctions|AActor::RegisterActorTickFunctions]]"
+  - "[[UWorld/UWorld.SetupPhysicsTickFunctions|UWorld::SetupPhysicsTickFunctions]]"
 tags:
   - TickTaskManager_cpp
 ---

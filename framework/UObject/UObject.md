@@ -4,6 +4,7 @@ related:
   - "[[UWorld/UWorld|UWorld]]"
   - "[[ULevel/ULevel|ULevel]]"
   - "[[AActor/AActor|AActor]]"
+  - "[[FTickPrerequisite/FTickPrerequisite|FTickPrerequisite]]"
 tags:
   - Object_h
 ---

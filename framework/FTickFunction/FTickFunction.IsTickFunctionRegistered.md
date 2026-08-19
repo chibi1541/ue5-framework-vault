@@ -4,6 +4,9 @@ related:
   - "[[FTickFunction/FTickFunction.SetTickFunctionEnable|FTickFunction::SetTickFunctionEnable]]"
   - "[[FTickFunction/FTickFunction.RegisterTickFunction|FTickFunction::RegisterTickFunction]]"
   - "[[AActor/AActor.RegisterActorTickFunctions|AActor::RegisterActorTickFunctions]]"
+  - "[[FTickFunction/FTickFunction.AddPrerequisite|FTickFunction::AddPrerequisite]]"
+  - "[[FTickFunction/FTickFunction.FInternalData|FTickFunction::FInternalData]]"
+  - "[[UWorld/UWorld.SetupPhysicsTickFunctions|UWorld::SetupPhysicsTickFunctions]]"
 tags:
   - EngineBaseTypes_h
 ---

@@ -22,6 +22,8 @@ related:
   - "[[UWorld/UWorld.SetActiveLevelCollection|UWorld::SetActiveLevelCollection]]"
   - "[[UWorld/UWorld.GetActiveLevelCollection|UWorld::GetActiveLevelCollection]]"
   - "[[FScopedLevelCollectionContextSwitch/FScopedLevelCollectionContextSwitch|FScopedLevelCollectionContextSwitch]]"
+  - "[[UWorld/UWorld.SetupPhysicsTickFunctions|UWorld::SetupPhysicsTickFunctions]]"
+  - "[[FPhysicsTickFunction/FPhysicsTickFunction|FPhysicsTickFunction]]"
 tags:
   - World_h
 ---
@@ -99,6 +101,13 @@ class UWorld final : public UObject, public FNetworkNotify
 }
 ```
 
+```cpp
+/** tick function for starting physics */
+FStartPhysicsTickFunction StartPhysicsTickFunction;
+/** tick function for ending physics */
+FEndPhysicsTickFunction EndPhysicsTickFunction;
+```
+
 ## 설명
 - 액터와 컴포넌트가 존재하고 렌더링되는 map/sandbox를 나타내는 최상위 객체. standalone game에서는 보통 하나만 존재하지만, 에디터에서는 편집 중인 레벨, 각 PIE 인스턴스, 뷰포트를 가진 에디터 툴마다 월드가 존재한다.
 - `URL`은 패키지 경로(파일 경로)라고 생각하면 된다. (예: `Game\Map\Seoul\Seoul.umap`)
@@ -108,3 +117,5 @@ class UWorld final : public UObject, public FNetworkNotify
 - `DefaultPhysicsVolume`/`PhysicsScene`은 월드 생성 시 만들어지는 physics 관련 객체. physics volume은 physics 처리가 적용되는 3D 범위로 이해하면 된다.
 - `SubsystemCollection`은 `FObjectSubsystemCollection<UWorldSubsystem>` 타입으로, 월드 단위 서브시스템들을 관리한다.
 - `LineBatcher` 계열은 디버그 라인을 그리기 위한 서브오브젝트로, 월드-레벨-액터-컴포넌트 계층 구조와는 별도로 월드 초기화 시 직접 등록된다.
+- `StartPhysicsTickFunction` / `EndPhysicsTickFunction`([[FPhysicsTickFunction/FPhysicsTickFunction|FPhysicsTickFunction]])은 physics simulation의 시작/종료를 담당하는 tick function으로, `UWorld`가 직접 멤버로 들고 있다. tick function이 `AActor`/`UActorComponent`가 아니어도 소유될 수 있음을 보여주는 예다.
+- 이 두 tick function은 [[UWorld/UWorld.SetupPhysicsTickFunctions|UWorld::SetupPhysicsTickFunctions()]]에서 `PersistentLevel`에 등록/해제된다.

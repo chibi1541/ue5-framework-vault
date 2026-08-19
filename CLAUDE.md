@@ -60,6 +60,7 @@ tags:
 ```
 
 ## 설명
+![[<image file name>]]
 - <explanation of the code>
 ````
 
@@ -74,6 +75,10 @@ tags:
   Write it as a list and without the `#` prefix — Obsidian's `tags` property adds the `#` itself.
 - No H1 title in the body. The file name is the title, so the body starts directly with the source code block.
 - `## 설명` holds the explanation of the code. Omit the section if there is nothing to explain.
+- If the source entry carries an image (`![[Pasted image ....png]]`), place it between the `## 설명`
+  heading and the explanation bullets, using Obsidian embed syntax (`![[<image file name>]]`).
+  Images live in `source/`, but Obsidian resolves the embed by file name, so no path is needed.
+  Multiple images go on consecutive lines. Omit the line when the entry has no image.
 
 ## Obsidian Snippets
 - `.obsidian/snippets/canvas-hide-properties.css` hides the frontmatter block inside canvas node

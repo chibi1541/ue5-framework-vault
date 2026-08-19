@@ -17,6 +17,7 @@ related:
   - "[[ULevel/ULevel.IncrementalUpdateComponents|ULevel::IncrementalUpdateComponents]]"
   - "[[ULevel/ULevel.IncrementalRegisterComponents|ULevel::IncrementalRegisterComponents]]"
   - "[[SortActorsHierarchy|SortActorsHierarchy]]"
+  - "[[UWorld/UWorld.SetupPhysicsTickFunctions|UWorld::SetupPhysicsTickFunctions]]"
   - "[[FTickFunction/FTickFunction.RegisterTickFunction|FTickFunction::RegisterTickFunction]]"
 tags:
   - Level_h

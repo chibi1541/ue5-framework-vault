@@ -13,6 +13,10 @@ related:
   - "[[FTickFunction/FTickFunction.RegisterTickFunction|FTickFunction::RegisterTickFunction]]"
   - "[[FTickTaskLevel/FTickTaskLevel.RemoveTickFunction|FTickTaskLevel::RemoveTickFunction]]"
   - "[[FTickTaskLevel/FTickTaskLevel.AddTickFunction|FTickTaskLevel::AddTickFunction]]"
+  - "[[FTickFunction/FTickFunction.AddPrerequisite|FTickFunction::AddPrerequisite]]"
+  - "[[FTickFunction/FTickFunction.FInternalData|FTickFunction::FInternalData]]"
+  - "[[FTickPrerequisite/FTickPrerequisite|FTickPrerequisite]]"
+  - "[[FPhysicsTickFunction/FPhysicsTickFunction|FPhysicsTickFunction]]"
 tags:
   - EngineBaseTypes_h
 ---
@@ -102,7 +106,29 @@ public:
 };
 ```
 
+```cpp
+/** prerequisites for this tick function */
+// haker: we can specify prerequisites for the tick function
+TArray<FTickPrerequisite> Prerequisites;
+```
+
+```cpp
+/**
+ * defines the minimum tick group for this tick function
+ * these groups determine the relative order of when objects tick during a frame update
+ * - given prerequisites, the tick may be delayed 
+ */
+TEnumAsByte<enum ETickingGroup> TickGroup;
+
+/** 
+ * defines the tick group that this tick function must finished in
+ * these tick group determine the relative order of when objects tick during a frame update
+ */
+TEnumAsByte<enum ETickingGroup> EndTickGroup;
+```
+
 ## 설명
+![[Pasted image 20260819154106.png]]
 - 모든 tick function의 추상 base 클래스. [[FActorTickFunction/FActorTickFunction|FActorTickFunction]], [[FActorComponentTickFunction/FActorComponentTickFunction|FActorComponentTickFunction]]이 이를 상속한다.
 - `TickGroup`([[Enum/ETickingGroup|ETickingGroup]])은 이 tick function이 프레임 내 어느 시점에 실행되는지를 정하는 최소 tick group이다. prerequisite에 따라 더 늦게 실행될 수도 있다.
 - `bCanEverTick`이 false면 tick function은 등록조차 되지 않는다. default에서만 설정 가능.
@@ -111,3 +137,7 @@ public:
 - `FInternalData`는 **등록된** tick function에만 필요한 데이터를 모아둔 구조체이며 `TUniquePtr`로 lazy 할당된다. Actor/ActorComponent 수만큼 tick function이 만들어지므로, tick이 필요 없는 경우 이 데이터를 할당하지 않는 hot/cold data 분리로 메모리와 성능을 함께 최적화한다.
 - `FInternalData::Next`는 cooling down 리스트를 linked list로 잇는 포인터다([[FCoolingDownTickFunctionList/FCoolingDownTickFunctionList|FCoolingDownTickFunctionList]]의 노드 역할).
 - `FInternalData::TickTaskLevel`은 자신을 담고 있는 [[FTickTaskLevel/FTickTaskLevel|FTickTaskLevel]]로의 back pointer다. `AActor`와 `ULevel`의 관계와 비슷하게, tick function은 level 단위로 모여 관리된다.
+- `Prerequisites`는 이 tick function보다 먼저 완료되어야 하는 tick function 목록이다([[FTickPrerequisite/FTickPrerequisite|FTickPrerequisite]] 배열). [[FTickFunction/FTickFunction.AddPrerequisite|AddPrerequisite()]]로 추가한다.
+- `TickGroup`은 실행될 수 있는 **최소** tick group이고, `EndTickGroup`은 반드시 **끝나야 하는** tick group이다. 즉 하나의 tick function이 여러 group에 걸쳐 있을 수 있다.
+- prerequisite 때문에 실제 실행 group이 밀릴 수 있어서, 실제로 시작/종료한 group은 [[FTickFunction/FTickFunction.FInternalData|FInternalData]]의 `ActualStartTickGroup` / `ActualEndTickGroup`에 따로 기록된다.
+- `FInternalData`의 전체 멤버는 [[FTickFunction/FTickFunction.FInternalData|FTickFunction::FInternalData]] 문서에서 다룬다.

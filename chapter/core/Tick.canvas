@@ -6,12 +6,20 @@
 		{"id":"fn-fticktaskmanager-endframe","type":"file","file":"framework/FTickTaskManager/FTickTaskManager.EndFrame.md","x":0,"y":420,"width":460,"height":360},
 		{"id":"fn-fticktasklevel-endframe","type":"file","file":"framework/FTickTaskLevel/FTickTaskLevel.EndFrame.md","x":0,"y":840,"width":460,"height":360},
 		{"id":"type-fscopedlevelcollectioncontextswitch","type":"file","file":"framework/FScopedLevelCollectionContextSwitch/FScopedLevelCollectionContextSwitch.md","x":980,"y":0,"width":460,"height":360},
-		{"id":"type-eleveltick","type":"file","file":"framework/Enum/ELevelTick.md","x":1500,"y":0,"width":460,"height":360}
+		{"id":"type-eleveltick","type":"file","file":"framework/Enum/ELevelTick.md","x":1500,"y":0,"width":460,"height":360},
+		{"id":"fn-uworld-setupphysicstickfunctions","type":"file","file":"framework/UWorld/UWorld.SetupPhysicsTickFunctions.md","x":-1040,"y":0,"width":460,"height":360},
+		{"id":"fn-ftickfunction-addprerequisite","type":"file","file":"framework/FTickFunction/FTickFunction.AddPrerequisite.md","x":-1040,"y":420,"width":460,"height":360},
+		{"id":"type-fphysicstickfunction","type":"file","file":"framework/FPhysicsTickFunction/FPhysicsTickFunction.md","x":980,"y":420,"width":460,"height":360},
+		{"id":"type-ftickprerequisite","type":"file","file":"framework/FTickPrerequisite/FTickPrerequisite.md","x":1500,"y":420,"width":460,"height":360},
+		{"id":"type-ftickfunction-finternaldata","type":"file","file":"framework/FTickFunction/FTickFunction.FInternalData.md","x":980,"y":840,"width":460,"height":360}
 	],
 	"edges":[
 		{"id":"edge-uworld-tick-setactivelevelcollection","fromNode":"fn-uworld-tick","fromSide":"left","toNode":"fn-uworld-setactivelevelcollection","toSide":"top","label":"FScopedLevelCollectionContextSwitch"},
 		{"id":"edge-setactivelevelcollection-getactivelevelcollection","fromNode":"fn-uworld-setactivelevelcollection","fromSide":"bottom","toNode":"fn-uworld-getactivelevelcollection","toSide":"top","label":"GetActiveLevelCollection"},
 		{"id":"edge-uworld-tick-fticktaskmanager-endframe","fromNode":"fn-uworld-tick","fromSide":"bottom","toNode":"fn-fticktaskmanager-endframe","toSide":"top","label":"FTickTaskManagerInterface::Get().EndFrame"},
-		{"id":"edge-fticktaskmanager-endframe-fticktasklevel-endframe","fromNode":"fn-fticktaskmanager-endframe","fromSide":"bottom","toNode":"fn-fticktasklevel-endframe","toSide":"top","label":"LevelList[i]->EndFrame"}
+		{"id":"edge-fticktaskmanager-endframe-fticktasklevel-endframe","fromNode":"fn-fticktaskmanager-endframe","fromSide":"bottom","toNode":"fn-fticktasklevel-endframe","toSide":"top","label":"LevelList[i]->EndFrame"},
+		{"id":"edge-setupphysics-addprerequisite","fromNode":"fn-uworld-setupphysicstickfunctions","fromSide":"bottom","toNode":"fn-ftickfunction-addprerequisite","toSide":"top","label":"EndPhysicsTickFunction.AddPrerequisite"},
+		{"id":"edge-fphysicstickfunction-finternaldata","fromNode":"type-fphysicstickfunction","fromSide":"bottom","toNode":"type-ftickfunction-finternaldata","toSide":"top","label":"FTickFunction"},
+		{"id":"edge-ftickprerequisite-fphysicstickfunction","fromNode":"type-ftickprerequisite","fromSide":"left","toNode":"type-fphysicstickfunction","toSide":"right","label":"Prerequisites"}
 	]
 }

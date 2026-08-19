@@ -13,6 +13,7 @@ related:
   - "[[FTickTaskManager/FTickTaskManager.TickTaskLevelForLevel|FTickTaskManager::TickTaskLevelForLevel]]"
   - "[[FTickTaskLevel/FTickTaskLevel.EndFrame|FTickTaskLevel::EndFrame]]"
   - "[[FTickTaskManager/FTickTaskManager.EndFrame|FTickTaskManager::EndFrame]]"
+  - "[[FTickFunction/FTickFunction.FInternalData|FTickFunction::FInternalData]]"
 tags:
   - TickTaskManager_cpp
 ---
