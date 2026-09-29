@@ -2,6 +2,7 @@
 related:
   - "[[UObjectBase/UObjectBase|UObjectBase]]"
   - "[[UObjectBaseUtility/UObjectBaseUtility.IsTemplate|UObjectBaseUtility::IsTemplate]]"
+  - "[[FRealtimeGC/FRealtimeGC.MarkRootObjectsAsReachable|FRealtimeGC::MarkRootObjectsAsReachable]]"
 tags:
   - ObjectMacros_h
 ---

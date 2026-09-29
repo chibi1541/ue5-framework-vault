@@ -1,0 +1,35 @@
+{
+	"nodes":[
+		{"id":"fn-trycollectgarbage","type":"file","file":"framework/TryCollectGarbage.md","x":0,"y":0,"width":460,"height":360},
+		{"id":"fn-collectgarbageinternal","type":"file","file":"framework/CollectGarbageInternal.md","x":0,"y":420,"width":460,"height":360},
+		{"id":"fn-fras-collectgarbage","type":"file","file":"framework/FReachabilityAnalysisState/FReachabilityAnalysisState.CollectGarbage.md","x":0,"y":840,"width":460,"height":360},
+		{"id":"fn-fras-performreachabilityanalysisandconditionallypurgegarbage","type":"file","file":"framework/FReachabilityAnalysisState/FReachabilityAnalysisState.PerformReachabilityAnalysisAndConditionallyPurgeGarbage.md","x":0,"y":1260,"width":460,"height":360},
+		{"id":"fn-fras-performreachabilityanalysis","type":"file","file":"framework/FReachabilityAnalysisState/FReachabilityAnalysisState.PerformReachabilityAnalysis.md","x":0,"y":1680,"width":460,"height":360},
+		{"id":"fn-collectgarbagefull","type":"file","file":"framework/CollectGarbageFull.md","x":-260,"y":2100,"width":460,"height":360},
+		{"id":"fn-collectgarbageincremental","type":"file","file":"framework/CollectGarbageIncremental.md","x":260,"y":2100,"width":460,"height":360},
+		{"id":"fn-collectgarbageimpl","type":"file","file":"framework/CollectGarbageImpl.md","x":0,"y":2520,"width":460,"height":360},
+		{"id":"fn-frealtimegc-performreachabilityanalysis","type":"file","file":"framework/FRealtimeGC/FRealtimeGC.PerformReachabilityAnalysis.md","x":0,"y":2940,"width":460,"height":360},
+		{"id":"fn-frealtimegc-startreachabilityanalysis","type":"file","file":"framework/FRealtimeGC/FRealtimeGC.StartReachabilityAnalysis.md","x":0,"y":3360,"width":460,"height":360},
+		{"id":"fn-frealtimegc-markobjectsasunreachable","type":"file","file":"framework/FRealtimeGC/FRealtimeGC.MarkObjectsAsUnreachable.md","x":0,"y":3780,"width":460,"height":360},
+		{"id":"fn-frealtimegc-resetreachabilityflags","type":"file","file":"framework/FRealtimeGC/FRealtimeGC.ResetReachabilityFlags.md","x":-260,"y":4200,"width":460,"height":360},
+		{"id":"fn-frealtimegc-markrootobjectsasreachable","type":"file","file":"framework/FRealtimeGC/FRealtimeGC.MarkRootObjectsAsReachable.md","x":260,"y":4200,"width":460,"height":360},
+		{"id":"fn-fgcflags-setmaybeunreachable-forgc","type":"file","file":"framework/FGCFlags/FGCFlags.SetMaybeUnreachable_ForGC.md","x":-260,"y":4620,"width":460,"height":360}
+	],
+	"edges":[
+		{"id":"edge-trycollectgarbage-collectgarbageinternal","fromNode":"fn-trycollectgarbage","fromSide":"bottom","toNode":"fn-collectgarbageinternal","toSide":"top","label":"CollectGarbageInternal"},
+		{"id":"edge-collectgarbageinternal-fras-collectgarbage","fromNode":"fn-collectgarbageinternal","fromSide":"bottom","toNode":"fn-fras-collectgarbage","toSide":"top","label":"GReachabilityState.CollectGarbage"},
+		{"id":"edge-fras-collectgarbage-performandpurge","fromNode":"fn-fras-collectgarbage","fromSide":"bottom","toNode":"fn-fras-performreachabilityanalysisandconditionallypurgegarbage","toSide":"top","label":"PerformReachabilityAnalysisAndConditionallyPurgeGarbage"},
+		{"id":"edge-performandpurge-fras-performreachabilityanalysis","fromNode":"fn-fras-performreachabilityanalysisandconditionallypurgegarbage","fromSide":"bottom","toNode":"fn-fras-performreachabilityanalysis","toSide":"top","label":"PerformReachabilityAnalysis"},
+		{"id":"edge-fras-performreachabilityanalysis-full","fromNode":"fn-fras-performreachabilityanalysis","fromSide":"bottom","toNode":"fn-collectgarbagefull","toSide":"top","label":"bPerformFullPurge"},
+		{"id":"edge-fras-performreachabilityanalysis-incremental","fromNode":"fn-fras-performreachabilityanalysis","fromSide":"bottom","toNode":"fn-collectgarbageincremental","toSide":"top","label":"incremental"},
+		{"id":"edge-full-impl","fromNode":"fn-collectgarbagefull","fromSide":"bottom","toNode":"fn-collectgarbageimpl","toSide":"top","label":"CollectGarbageImpl<true>"},
+		{"id":"edge-incremental-impl","fromNode":"fn-collectgarbageincremental","fromSide":"bottom","toNode":"fn-collectgarbageimpl","toSide":"top","label":"CollectGarbageImpl<false>"},
+		{"id":"edge-impl-frealtimegc-performreachabilityanalysis","fromNode":"fn-collectgarbageimpl","fromSide":"bottom","toNode":"fn-frealtimegc-performreachabilityanalysis","toSide":"top","label":"FRealtimeGC::PerformReachabilityAnalysis"},
+		{"id":"edge-performandpurge-frealtimegc-performreachabilityanalysis","fromNode":"fn-fras-performreachabilityanalysisandconditionallypurgegarbage","fromSide":"right","toNode":"fn-frealtimegc-performreachabilityanalysis","toSide":"right","label":"garbage tracking rerun"},
+		{"id":"edge-frealtimegc-performreachabilityanalysis-start","fromNode":"fn-frealtimegc-performreachabilityanalysis","fromSide":"bottom","toNode":"fn-frealtimegc-startreachabilityanalysis","toSide":"top","label":"StartReachabilityAnalysis"},
+		{"id":"edge-start-markobjectsasunreachable","fromNode":"fn-frealtimegc-startreachabilityanalysis","fromSide":"bottom","toNode":"fn-frealtimegc-markobjectsasunreachable","toSide":"top","label":"MarkObjectsAsUnreachable"},
+		{"id":"edge-markobjectsasunreachable-resetreachabilityflags","fromNode":"fn-frealtimegc-markobjectsasunreachable","fromSide":"bottom","toNode":"fn-frealtimegc-resetreachabilityflags","toSide":"top","label":"ResetReachabilityFlags"},
+		{"id":"edge-markobjectsasunreachable-markrootobjectsasreachable","fromNode":"fn-frealtimegc-markobjectsasunreachable","fromSide":"bottom","toNode":"fn-frealtimegc-markrootobjectsasreachable","toSide":"top","label":"MarkRootObjectsAsReachable"},
+		{"id":"edge-resetreachabilityflags-setmaybeunreachable","fromNode":"fn-frealtimegc-resetreachabilityflags","fromSide":"bottom","toNode":"fn-fgcflags-setmaybeunreachable-forgc","toSide":"top","label":"FGCFlags::SetMaybeUnreachable_ForGC"}
+	]
+}
